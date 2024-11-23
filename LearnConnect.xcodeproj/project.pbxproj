@@ -21,6 +21,10 @@
 		2D639A842CF251D200C6E69A /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D639A832CF251D200C6E69A /* AppRouter.swift */; };
 		2D639A8A2CF2523700C6E69A /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D639A872CF2523700C6E69A /* BaseViewController.swift */; };
 		2D639A8B2CF2523700C6E69A /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D639A882CF2523700C6E69A /* BaseViewModel.swift */; };
+		2D639A902CF2531600C6E69A /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D639A8D2CF2531600C6E69A /* HomeRouter.swift */; };
+		2D639A912CF2531600C6E69A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D639A8E2CF2531600C6E69A /* HomeViewController.swift */; };
+		2D639A922CF2531600C6E69A /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D639A8F2CF2531600C6E69A /* HomeViewModel.swift */; };
+		2D639A942CF2532300C6E69A /* HomeRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D639A932CF2532300C6E69A /* HomeRoute.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +43,10 @@
 		2D639A832CF251D200C6E69A /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		2D639A872CF2523700C6E69A /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		2D639A882CF2523700C6E69A /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		2D639A8D2CF2531600C6E69A /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		2D639A8E2CF2531600C6E69A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		2D639A8F2CF2531600C6E69A /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		2D639A932CF2532300C6E69A /* HomeRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRoute.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +80,7 @@
 		2D639A5A2CF249C400C6E69A /* LearnConnect */ = {
 			isa = PBXGroup;
 			children = (
+				2D639A8C2CF252A100C6E69A /* Home */,
 				2D639A852CF2521F00C6E69A /* Base */,
 				2D639A722CF250C500C6E69A /* Routing */,
 				2D639A5B2CF249C400C6E69A /* AppDelegate.swift */,
@@ -136,6 +145,17 @@
 				2D639A882CF2523700C6E69A /* BaseViewModel.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		2D639A8C2CF252A100C6E69A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				2D639A8E2CF2531600C6E69A /* HomeViewController.swift */,
+				2D639A8F2CF2531600C6E69A /* HomeViewModel.swift */,
+				2D639A8D2CF2531600C6E69A /* HomeRouter.swift */,
+				2D639A932CF2532300C6E69A /* HomeRoute.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D639A7A2CF2511400C6E69A /* Router.swift in Sources */,
+				2D639A902CF2531600C6E69A /* HomeRouter.swift in Sources */,
 				2D639A802CF251A700C6E69A /* PushTransition.swift in Sources */,
 				2D639A8A2CF2523700C6E69A /* BaseViewController.swift in Sources */,
 				2D639A782CF2510700C6E69A /* Animator.swift in Sources */,
@@ -222,8 +243,11 @@
 				2D639A8B2CF2523700C6E69A /* BaseViewModel.swift in Sources */,
 				2D639A7C2CF2513900C6E69A /* ModalTransition.swift in Sources */,
 				2D639A842CF251D200C6E69A /* AppRouter.swift in Sources */,
+				2D639A922CF2531600C6E69A /* HomeViewModel.swift in Sources */,
+				2D639A942CF2532300C6E69A /* HomeRoute.swift in Sources */,
 				2D639A5C2CF249C400C6E69A /* AppDelegate.swift in Sources */,
 				2D639A822CF251B800C6E69A /* Transition.swift in Sources */,
+				2D639A912CF2531600C6E69A /* HomeViewController.swift in Sources */,
 				2D639A7E2CF2519600C6E69A /* PlaceOnWindowTransition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
