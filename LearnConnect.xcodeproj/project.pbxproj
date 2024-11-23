@@ -8,22 +8,37 @@
 
 /* Begin PBXBuildFile section */
 		2D639A5C2CF249C400C6E69A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D639A5B2CF249C400C6E69A /* AppDelegate.swift */; };
-		2D639A5E2CF249C400C6E69A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D639A5D2CF249C400C6E69A /* SceneDelegate.swift */; };
 		2D639A602CF249C400C6E69A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D639A5F2CF249C400C6E69A /* ViewController.swift */; };
-		2D639A632CF249C400C6E69A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D639A612CF249C400C6E69A /* Main.storyboard */; };
 		2D639A652CF249C700C6E69A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D639A642CF249C700C6E69A /* Assets.xcassets */; };
 		2D639A682CF249C700C6E69A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D639A662CF249C700C6E69A /* LaunchScreen.storyboard */; };
+		2D639A712CF24C6B00C6E69A /* TinyConstraints in Frameworks */ = {isa = PBXBuildFile; productRef = 2D639A702CF24C6B00C6E69A /* TinyConstraints */; };
+		2D639A782CF2510700C6E69A /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D639A772CF2510700C6E69A /* Animator.swift */; };
+		2D639A7A2CF2511400C6E69A /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D639A792CF2511400C6E69A /* Router.swift */; };
+		2D639A7C2CF2513900C6E69A /* ModalTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D639A7B2CF2513900C6E69A /* ModalTransition.swift */; };
+		2D639A7E2CF2519600C6E69A /* PlaceOnWindowTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D639A7D2CF2519600C6E69A /* PlaceOnWindowTransition.swift */; };
+		2D639A802CF251A700C6E69A /* PushTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D639A7F2CF251A700C6E69A /* PushTransition.swift */; };
+		2D639A822CF251B800C6E69A /* Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D639A812CF251B800C6E69A /* Transition.swift */; };
+		2D639A842CF251D200C6E69A /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D639A832CF251D200C6E69A /* AppRouter.swift */; };
+		2D639A8A2CF2523700C6E69A /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D639A872CF2523700C6E69A /* BaseViewController.swift */; };
+		2D639A8B2CF2523700C6E69A /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D639A882CF2523700C6E69A /* BaseViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2D639A582CF249C400C6E69A /* LearnConnect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnConnect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D639A5B2CF249C400C6E69A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2D639A5D2CF249C400C6E69A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		2D639A5F2CF249C400C6E69A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2D639A622CF249C400C6E69A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2D639A642CF249C700C6E69A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D639A672CF249C700C6E69A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D639A692CF249C700C6E69A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D639A772CF2510700C6E69A /* Animator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
+		2D639A792CF2511400C6E69A /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		2D639A7B2CF2513900C6E69A /* ModalTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalTransition.swift; sourceTree = "<group>"; };
+		2D639A7D2CF2519600C6E69A /* PlaceOnWindowTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceOnWindowTransition.swift; sourceTree = "<group>"; };
+		2D639A7F2CF251A700C6E69A /* PushTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushTransition.swift; sourceTree = "<group>"; };
+		2D639A812CF251B800C6E69A /* Transition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transition.swift; sourceTree = "<group>"; };
+		2D639A832CF251D200C6E69A /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		2D639A872CF2523700C6E69A /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		2D639A882CF2523700C6E69A /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D639A712CF24C6B00C6E69A /* TinyConstraints in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +72,70 @@
 		2D639A5A2CF249C400C6E69A /* LearnConnect */ = {
 			isa = PBXGroup;
 			children = (
+				2D639A852CF2521F00C6E69A /* Base */,
+				2D639A722CF250C500C6E69A /* Routing */,
 				2D639A5B2CF249C400C6E69A /* AppDelegate.swift */,
-				2D639A5D2CF249C400C6E69A /* SceneDelegate.swift */,
 				2D639A5F2CF249C400C6E69A /* ViewController.swift */,
-				2D639A612CF249C400C6E69A /* Main.storyboard */,
 				2D639A642CF249C700C6E69A /* Assets.xcassets */,
 				2D639A662CF249C700C6E69A /* LaunchScreen.storyboard */,
 				2D639A692CF249C700C6E69A /* Info.plist */,
 			);
 			path = LearnConnect;
+			sourceTree = "<group>";
+		};
+		2D639A722CF250C500C6E69A /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				2D639A762CF250F000C6E69A /* Route */,
+				2D639A752CF250E900C6E69A /* Transitions */,
+				2D639A742CF250E200C6E69A /* Routers */,
+				2D639A732CF250DD00C6E69A /* Core */,
+			);
+			path = Routing;
+			sourceTree = "<group>";
+		};
+		2D639A732CF250DD00C6E69A /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				2D639A772CF2510700C6E69A /* Animator.swift */,
+				2D639A792CF2511400C6E69A /* Router.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		2D639A742CF250E200C6E69A /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				2D639A832CF251D200C6E69A /* AppRouter.swift */,
+			);
+			path = Routers;
+			sourceTree = "<group>";
+		};
+		2D639A752CF250E900C6E69A /* Transitions */ = {
+			isa = PBXGroup;
+			children = (
+				2D639A7B2CF2513900C6E69A /* ModalTransition.swift */,
+				2D639A7D2CF2519600C6E69A /* PlaceOnWindowTransition.swift */,
+				2D639A7F2CF251A700C6E69A /* PushTransition.swift */,
+				2D639A812CF251B800C6E69A /* Transition.swift */,
+			);
+			path = Transitions;
+			sourceTree = "<group>";
+		};
+		2D639A762CF250F000C6E69A /* Route */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Route;
+			sourceTree = "<group>";
+		};
+		2D639A852CF2521F00C6E69A /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				2D639A872CF2523700C6E69A /* BaseViewController.swift */,
+				2D639A882CF2523700C6E69A /* BaseViewModel.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +154,9 @@
 			dependencies = (
 			);
 			name = LearnConnect;
+			packageProductDependencies = (
+				2D639A702CF24C6B00C6E69A /* TinyConstraints */,
+			);
 			productName = LearnConnect;
 			productReference = 2D639A582CF249C400C6E69A /* LearnConnect.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +185,9 @@
 				Base,
 			);
 			mainGroup = 2D639A4F2CF249C400C6E69A;
+			packageReferences = (
+				2D639A6F2CF24C6B00C6E69A /* XCRemoteSwiftPackageReference "TinyConstraints" */,
+			);
 			productRefGroup = 2D639A592CF249C400C6E69A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +204,6 @@
 			files = (
 				2D639A682CF249C700C6E69A /* LaunchScreen.storyboard in Resources */,
 				2D639A652CF249C700C6E69A /* Assets.xcassets in Resources */,
-				2D639A632CF249C400C6E69A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +214,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D639A7A2CF2511400C6E69A /* Router.swift in Sources */,
+				2D639A802CF251A700C6E69A /* PushTransition.swift in Sources */,
+				2D639A8A2CF2523700C6E69A /* BaseViewController.swift in Sources */,
+				2D639A782CF2510700C6E69A /* Animator.swift in Sources */,
 				2D639A602CF249C400C6E69A /* ViewController.swift in Sources */,
+				2D639A8B2CF2523700C6E69A /* BaseViewModel.swift in Sources */,
+				2D639A7C2CF2513900C6E69A /* ModalTransition.swift in Sources */,
+				2D639A842CF251D200C6E69A /* AppRouter.swift in Sources */,
 				2D639A5C2CF249C400C6E69A /* AppDelegate.swift in Sources */,
-				2D639A5E2CF249C400C6E69A /* SceneDelegate.swift in Sources */,
+				2D639A822CF251B800C6E69A /* Transition.swift in Sources */,
+				2D639A7E2CF2519600C6E69A /* PlaceOnWindowTransition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		2D639A612CF249C400C6E69A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2D639A622CF249C400C6E69A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		2D639A662CF249C700C6E69A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -297,7 +373,6 @@
 				INFOPLIST_FILE = LearnConnect/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -325,7 +400,6 @@
 				INFOPLIST_FILE = LearnConnect/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -363,6 +437,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2D639A6F2CF24C6B00C6E69A /* XCRemoteSwiftPackageReference "TinyConstraints" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/roberthein/TinyConstraints.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2D639A702CF24C6B00C6E69A /* TinyConstraints */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2D639A6F2CF24C6B00C6E69A /* XCRemoteSwiftPackageReference "TinyConstraints" */;
+			productName = TinyConstraints;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2D639A502CF249C400C6E69A /* Project object */;
 }
