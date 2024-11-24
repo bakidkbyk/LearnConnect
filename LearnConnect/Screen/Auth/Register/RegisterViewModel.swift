@@ -13,6 +13,9 @@ protocol RegisterViewEventSource {}
 
 protocol RegisterViewProtocol: RegisterViewDataSource, RegisterViewEventSource {}
 
-final class RegisterViewModel: BaseViewModel<RegisterRouter>, RegisterViewProtocol {
+final class RegisterViewModel: BaseViewModel<RegisterRouter>, RegisterViewProtocol  {
     
+    func SigUpSuccess() {
+        router.presentLogin()
+    }
 }

@@ -7,12 +7,18 @@
 
 import UIKit
 
-final class AppRouter: Router, AppRouter.Routes {
-    
-    typealias Routes = RegisterRoute
+protocol AppRouterRoutes: RegisterRoute {
+    func startApp()
+}
+
+final class AppRouter: Router, AppRouterRoutes {
+
     static let shared = AppRouter()
-    
+
     func startApp() {
         presentRegister()
     }
+    
 }
+
+
