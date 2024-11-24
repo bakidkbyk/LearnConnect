@@ -111,7 +111,6 @@
 		2D639A722CF250C500C6E69A /* Routing */ = {
 			isa = PBXGroup;
 			children = (
-				2D639A762CF250F000C6E69A /* Route */,
 				2D639A752CF250E900C6E69A /* Transitions */,
 				2D639A742CF250E200C6E69A /* Routers */,
 				2D639A732CF250DD00C6E69A /* Core */,
@@ -145,13 +144,6 @@
 				2D639A812CF251B800C6E69A /* Transition.swift */,
 			);
 			path = Transitions;
-			sourceTree = "<group>";
-		};
-		2D639A762CF250F000C6E69A /* Route */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Route;
 			sourceTree = "<group>";
 		};
 		2D639A852CF2521F00C6E69A /* Base */ = {
@@ -490,9 +482,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = UmitBakiDikbiyik.LearnConnect;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -517,9 +513,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = UmitBakiDikbiyik.LearnConnect;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
