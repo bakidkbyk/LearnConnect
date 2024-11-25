@@ -8,19 +8,18 @@
 import UIKit
 
 protocol RegisterRoute {
-    func presentRegister()
+    func pushRegister()
 }
 
 extension RegisterRoute where Self: RouterProtocol {
     
-    func presentRegister() {
+    func pushRegister() {
         let router = RegisterRouter()
         let viewModel = RegisterViewModel(router: router)
         let viewController = RegisterViewController(viewModel: viewModel)
-        let navigationContoller = UINavigationController(rootViewController: viewController)
 
         
-        let transition = PlaceOnWindowTransition()
+        let transition = ModalTransition(isAnimated: true, modalTransitionStyle: .coverVertical, modalPresentationStyle: .fullScreen)
         router.viewController = viewController
         router.openTransition = transition
         

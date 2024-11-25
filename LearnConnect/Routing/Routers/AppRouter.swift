@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol AppRouterRoutes: RegisterRoute {
+protocol AppRouterRoutes: WalkthroughRoute {
     func startApp()
 }
 
@@ -16,7 +16,7 @@ final class AppRouter: Router, AppRouterRoutes {
     static let shared = AppRouter()
 
     func startApp() {
-        presentRegister()
+        placeOnWindowWalkthrough()
     }
     
 }

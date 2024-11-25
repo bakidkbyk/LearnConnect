@@ -53,6 +53,15 @@
 		8966CD772CF41D8200196AE3 /* ToastPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8966CD762CF41D8200196AE3 /* ToastPresenter.swift */; };
 		8966CD792CF41DA200196AE3 /* ToastWarningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8966CD782CF41DA200196AE3 /* ToastWarningView.swift */; };
 		8966CD7B2CF4207700196AE3 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8966CD7A2CF4207700196AE3 /* Validation.swift */; };
+		8966CD7E2CF439D500196AE3 /* WalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8966CD7D2CF439D500196AE3 /* WalkthroughViewController.swift */; };
+		8966CD802CF439F100196AE3 /* WalkthroughViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8966CD7F2CF439F100196AE3 /* WalkthroughViewModel.swift */; };
+		8966CD822CF439FD00196AE3 /* WalkthroughRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8966CD812CF439FD00196AE3 /* WalkthroughRouter.swift */; };
+		8966CD842CF43A0600196AE3 /* WalkthroughRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8966CD832CF43A0600196AE3 /* WalkthroughRoute.swift */; };
+		8966CD872CF4415000196AE3 /* WalkthroughCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8966CD862CF4415000196AE3 /* WalkthroughCell.swift */; };
+		8966CD8A2CF442DB00196AE3 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8966CD892CF442DB00196AE3 /* ReusableView.swift */; };
+		8966CD8C2CF44A0B00196AE3 /* WalkthroughCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8966CD8B2CF44A0B00196AE3 /* WalkthroughCellModel.swift */; };
+		8966CD8F2CF44BC900196AE3 /* PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8966CD8E2CF44BC900196AE3 /* PageControl.swift */; };
+		8966CD922CF4512500196AE3 /* UICollectionView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8966CD912CF4512500196AE3 /* UICollectionView+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -99,6 +108,15 @@
 		8966CD762CF41D8200196AE3 /* ToastPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastPresenter.swift; sourceTree = "<group>"; };
 		8966CD782CF41DA200196AE3 /* ToastWarningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastWarningView.swift; sourceTree = "<group>"; };
 		8966CD7A2CF4207700196AE3 /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
+		8966CD7D2CF439D500196AE3 /* WalkthroughViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughViewController.swift; sourceTree = "<group>"; };
+		8966CD7F2CF439F100196AE3 /* WalkthroughViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughViewModel.swift; sourceTree = "<group>"; };
+		8966CD812CF439FD00196AE3 /* WalkthroughRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughRouter.swift; sourceTree = "<group>"; };
+		8966CD832CF43A0600196AE3 /* WalkthroughRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughRoute.swift; sourceTree = "<group>"; };
+		8966CD862CF4415000196AE3 /* WalkthroughCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughCell.swift; sourceTree = "<group>"; };
+		8966CD892CF442DB00196AE3 /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
+		8966CD8B2CF44A0B00196AE3 /* WalkthroughCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughCellModel.swift; sourceTree = "<group>"; };
+		8966CD8E2CF44BC900196AE3 /* PageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControl.swift; sourceTree = "<group>"; };
+		8966CD912CF4512500196AE3 /* UICollectionView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -233,6 +251,10 @@
 		2D639AA12CF25A5300C6E69A /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				8966CD902CF4511600196AE3 /* Extensions */,
+				8966CD8D2CF44BB800196AE3 /* UIPageControl */,
+				8966CD882CF442CC00196AE3 /* Protocols */,
+				8966CD852CF440D100196AE3 /* WalkthroughCell */,
 				8966CD722CF41C1700196AE3 /* Toast */,
 				8966CD6F2CF4184F00196AE3 /* UIActivityIndicatorView */,
 				8966CD642CF4103700196AE3 /* Loading */,
@@ -269,6 +291,7 @@
 		8966CD3B2CF370F000196AE3 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				8966CD7C2CF439A300196AE3 /* Walkthrough */,
 				2D639A852CF2521F00C6E69A /* Base */,
 				2D639A962CF2568800C6E69A /* Auth */,
 			);
@@ -374,6 +397,50 @@
 			path = Toast;
 			sourceTree = "<group>";
 		};
+		8966CD7C2CF439A300196AE3 /* Walkthrough */ = {
+			isa = PBXGroup;
+			children = (
+				8966CD7D2CF439D500196AE3 /* WalkthroughViewController.swift */,
+				8966CD7F2CF439F100196AE3 /* WalkthroughViewModel.swift */,
+				8966CD812CF439FD00196AE3 /* WalkthroughRouter.swift */,
+				8966CD832CF43A0600196AE3 /* WalkthroughRoute.swift */,
+			);
+			path = Walkthrough;
+			sourceTree = "<group>";
+		};
+		8966CD852CF440D100196AE3 /* WalkthroughCell */ = {
+			isa = PBXGroup;
+			children = (
+				8966CD862CF4415000196AE3 /* WalkthroughCell.swift */,
+				8966CD8B2CF44A0B00196AE3 /* WalkthroughCellModel.swift */,
+			);
+			path = WalkthroughCell;
+			sourceTree = "<group>";
+		};
+		8966CD882CF442CC00196AE3 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				8966CD892CF442DB00196AE3 /* ReusableView.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		8966CD8D2CF44BB800196AE3 /* UIPageControl */ = {
+			isa = PBXGroup;
+			children = (
+				8966CD8E2CF44BC900196AE3 /* PageControl.swift */,
+			);
+			path = UIPageControl;
+			sourceTree = "<group>";
+		};
+		8966CD902CF4511600196AE3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8966CD912CF4512500196AE3 /* UICollectionView+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -457,11 +524,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8966CD822CF439FD00196AE3 /* WalkthroughRouter.swift in Sources */,
 				8966CD5B2CF3BEDD00196AE3 /* LoginViewController.swift in Sources */,
+				8966CD842CF43A0600196AE3 /* WalkthroughRoute.swift in Sources */,
 				8966CD562CF3BAAD00196AE3 /* User.swift in Sources */,
 				2D639A7A2CF2511400C6E69A /* Router.swift in Sources */,
+				8966CD872CF4415000196AE3 /* WalkthroughCell.swift in Sources */,
 				8966CD6A2CF4107100196AE3 /* BlockingActivityIndicator.swift in Sources */,
 				2D639A902CF2531600C6E69A /* HomeRouter.swift in Sources */,
+				8966CD922CF4512500196AE3 /* UICollectionView+Extensions.swift in Sources */,
 				2D639A802CF251A700C6E69A /* PushTransition.swift in Sources */,
 				8966CD772CF41D8200196AE3 /* ToastPresenter.swift in Sources */,
 				2D639AA42CF25A7B00C6E69A /* FloatLabelTextField.swift in Sources */,
@@ -469,12 +540,15 @@
 				8966CD3E2CF3712100196AE3 /* AuthService.swift in Sources */,
 				8966CD792CF41DA200196AE3 /* ToastWarningView.swift in Sources */,
 				8966CD5F2CF3BF9200196AE3 /* LoginRouter.swift in Sources */,
+				8966CD8A2CF442DB00196AE3 /* ReusableView.swift in Sources */,
 				8966CD612CF3BFB000196AE3 /* LoginRoute.swift in Sources */,
 				8966CD682CF4105A00196AE3 /* LoadingProtocol.swift in Sources */,
 				2D639A8A2CF2523700C6E69A /* BaseViewController.swift in Sources */,
 				8966CD582CF3BC6B00196AE3 /* AlertManager.swift in Sources */,
 				2D639A782CF2510700C6E69A /* Animator.swift in Sources */,
+				8966CD802CF439F100196AE3 /* WalkthroughViewModel.swift in Sources */,
 				8966CD712CF4186200196AE3 /* ActivityIndicatorView.swift in Sources */,
+				8966CD7E2CF439D500196AE3 /* WalkthroughViewController.swift in Sources */,
 				2D639A9B2CF256AE00C6E69A /* RegisterRouter.swift in Sources */,
 				2D639A9D2CF256AE00C6E69A /* RegisterViewModel.swift in Sources */,
 				2D639A8B2CF2523700C6E69A /* BaseViewModel.swift in Sources */,
@@ -483,6 +557,7 @@
 				2D639A842CF251D200C6E69A /* AppRouter.swift in Sources */,
 				8966CD512CF3B61D00196AE3 /* RegisterUserRequest.swift in Sources */,
 				8966CD6E2CF413C400196AE3 /* Closures.swift in Sources */,
+				8966CD8F2CF44BC900196AE3 /* PageControl.swift in Sources */,
 				2D639A922CF2531600C6E69A /* HomeViewModel.swift in Sources */,
 				2D639A942CF2532300C6E69A /* HomeRoute.swift in Sources */,
 				8966CD662CF4104900196AE3 /* ActivityIndicatorProtocol.swift in Sources */,
@@ -495,6 +570,7 @@
 				2D639A822CF251B800C6E69A /* Transition.swift in Sources */,
 				2D639A912CF2531600C6E69A /* HomeViewController.swift in Sources */,
 				2D639A7E2CF2519600C6E69A /* PlaceOnWindowTransition.swift in Sources */,
+				8966CD8C2CF44A0B00196AE3 /* WalkthroughCellModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
