@@ -7,6 +7,7 @@
 
 import Foundation
 
-protocol LoginRouterProtocol:RegisterRoute {}
+protocol LoginRouterProtocol:RegisterRoute,
+                             HomeTabBarRoute {}
 
-final class LoginRouter: Router {}
+final class LoginRouter: Router, LoginRouterProtocol {}

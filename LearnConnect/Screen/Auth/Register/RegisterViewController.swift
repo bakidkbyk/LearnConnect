@@ -34,7 +34,7 @@ final class RegisterViewController: BaseViewController<RegisterViewModel> {
     
     private let titleLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 26)
+        label.font = UIFont.boldSystemFont(ofSize: 26)
         label.textAlignment = .center
         label.textColor = .black
         label.translatesAutoresizingMaskIntoConstraints = false
