@@ -49,16 +49,15 @@ class AuthService {
         }
     }
     
-    public func signIn(with userRequest: LoginUserRequest, completion: @escaping (Error?)->Void) {
+    public func signIn(with userRequest: LoginUserRequest, completion: @escaping (Error?, Bool) -> Void) {
         Auth.auth().signIn(
             withEmail: userRequest.email,
             password: userRequest.password
         ) { result, error in
             if let error = error {
-                completion(error)
-                return
+                completion(error, false)
             } else {
-                completion(nil)
+                completion(nil, true)
             }
         }
     }

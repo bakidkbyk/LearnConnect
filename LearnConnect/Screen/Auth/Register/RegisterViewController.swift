@@ -7,6 +7,7 @@
 
 import UIKit
 import TinyConstraints
+import SwiftEntryKit
 
 
 final class RegisterViewController: BaseViewController<RegisterViewModel> {
@@ -54,7 +55,7 @@ final class RegisterViewController: BaseViewController<RegisterViewModel> {
     
     private let signUpButton: UIButton = {
         let button = UIButton(type: .system)
-        button.setTitle("Login", for: .normal)
+        button.setTitle("Kayit Ol", for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 18)
         button.setTitleColor(.red, for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
@@ -189,50 +190,63 @@ extension RegisterViewController {
     }
 }
 
-// MARK: - Validation
+// MARK: - Validation And Request
 extension RegisterViewController {
     
     @objc
     func didTapSignUp() {
-        let registerUserRequest = RegiserUserRequest(
-            username: self.usernameTextField.text ?? "",
-            email: self.emailTextField.text ?? "",
-            password: self.passwordTextField.text ?? ""
-        )
+//        let registerUserRequest = RegiserUserRequest(
+//            username: self.usernameTextField.text ?? "",
+//            email: self.emailTextField.text ?? "",
+//            password: self.passwordTextField.text ?? ""
+//        )
+//        
+//        if !Validator.isValidUsername(for: registerUserRequest.username) {
+//            AlertManager.showInvalidUsernameAlert(on: self)
+//            return
+//        }
+//        
+//        if !Validator.isValidEmail(for: registerUserRequest.email) {
+//            AlertManager.showInvalidEmailAlert(on: self)
+//            return
+//        }
+//        
+//        if !Validator.isPasswordValid(for: registerUserRequest.password) {
+//            AlertManager.showInvalidPasswordAlert(on: self)
+//            return
+//        }
+//        
+//        AuthService.shared.registerUser(with: registerUserRequest) { [weak self] wasRegistered, error in
+//            guard let self = self else { return }
+//            
+//            if let error = error {
+//                AlertManager.showRegistrationErrorAlert(on: self, with: error)
+//                return
+//            }
+//            
+//            if wasRegistered {
+//                viewModel.showLoginScreen()
+//            } else {
+//                AlertManager.showRegistrationErrorAlert(on: self)
+//            }
+//        }
         
-        if !Validator.isValidUsername(for: registerUserRequest.username) {
-            AlertManager.showInvalidUsernameAlert(on: self)
+        guard let username = usernameTextField.text,
+              let email    = emailTextField.text,
+              let password = passwordTextField.text else {
+            showWarningToast(message: RegisterTexts.emptyFields)
             return
         }
         
-        if !Validator.isValidEmail(for: registerUserRequest.email) {
-            AlertManager.showInvalidEmailAlert(on: self)
-            return
-        }
+        let validation = Validation()
+        guard validation.isValidEmail(email) else { return }
+        guard validation.isValidPassword(password) else { return }
         
-        if !Validator.isPasswordValid(for: registerUserRequest.password) {
-            AlertManager.showInvalidPasswordAlert(on: self)
-            return
-        }
-        
-        AuthService.shared.registerUser(with: registerUserRequest) { [weak self] wasRegistered, error in
-            guard let self = self else { return }
-            
-            if let error = error {
-                AlertManager.showRegistrationErrorAlert(on: self, with: error)
-                return
-            }
-            
-            if wasRegistered {
-                viewModel.SigUpSuccess()
-            } else {
-                AlertManager.showRegistrationErrorAlert(on: self)
-            }
-        }
+        viewModel.sendRegisterRequest(username: username, email: email, password: password)
     }
     
     @objc
     private func didTapSignIn() {
-        self.navigationController?.popToRootViewController(animated: true)
+        viewModel.showLoginScreen()
     }
 }
