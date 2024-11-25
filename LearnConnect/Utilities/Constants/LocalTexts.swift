@@ -9,16 +9,6 @@ import Foundation
 
 // MARK: - Register Strings
 struct RegisterTexts {
-    //    static let headerTitleText = "Kayit Ol"
-    //    static let usernamePlaceHolder = "Kullanıcı Adı"
-    //    static let buttonText = "Kayit Ol"
-    //    static let bottomButtonText = "Sign in now"
-    //    static let forgotPasswordText = "Forgot Password?"
-    //    static let emptyFields = "Lütfen boş alanları doldurunuz"
-    //    static let successRegister = "Sign up successfuly."
-    //    static let unknownError = "An unknown error occured please try again."
-    //    static let alreadyHaveEmail = "This email already using please try another email."
-    
     
     static let title = "LEARN CONNECT";
     static let signUpButtonText = "Üye Ol"
@@ -29,4 +19,19 @@ struct RegisterTexts {
     static let passwordPlaceHolder = "Şifre"
     static let emptyFields = "Lütfen boş alanları doldurunuz"
     static let checkInformations = "Lütfen bilgilerinizi kontrol ediniz."
+    
+    
+}
+
+// MARK: - Login Strings
+struct LoginTexts {
+    
+    static let title = "LEARN CONNECT"
+    static let loginButtonText = "Giriş Yap"
+    static let bottomLabelText = "Hesabın mı yok?"
+    static let bottomButtonText = "Üye Ol"
+    static let emailPlaceHolder = "E-mail Adresi"
+    static let passwordPlaceHolder = "Şifre"
+    static let emptyFields = "Lütfen boş alanları doldurunuz"
+
 }
