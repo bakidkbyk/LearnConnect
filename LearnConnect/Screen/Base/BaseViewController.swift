@@ -56,6 +56,5 @@ class BaseViewController<V: BaseViewModeProtocol>: UIViewController, LoadingProt
     func showWarningToast(message: String) {
         ToastPresenter.showWarningToast(text: message)
     }
-
     
 }

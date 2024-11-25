@@ -9,27 +9,17 @@ import UIKit
 
 final class WalkthroughViewController: BaseViewController<WalkthroughViewModel> {
     
-//    private let collectionView: UICollectionView = {
-//        let collectionView = UICollectionView()
-//        collectionView.backgroundColor = .white
-//         collectionView.showsVerticalScrollIndicator = false
-//         collectionView.showsHorizontalScrollIndicator = false
-//         collectionView.isPagingEnabled = true
-//         return collectionView
-//    }()
-    
     private let collectionView: UICollectionView = {
-        // Varsayılan layout oluştur
-        let layout = UICollectionViewFlowLayout()
-        layout.scrollDirection = .horizontal // Yatay kaydırma
-        layout.minimumLineSpacing = 0 // Hücreler arasında boşluk yok
-        layout.minimumInteritemSpacing = 0 // Elemanlar arası boşluk yok
         
-        // CollectionView oluştur
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .horizontal  
+        layout.minimumLineSpacing = 0
+        layout.minimumInteritemSpacing = 0
+        
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
-        collectionView.backgroundColor = .white // Arka plan rengi
-        collectionView.isPagingEnabled = true // Sayfalama aktif
-        collectionView.showsHorizontalScrollIndicator = false // Yatay kaydırma göstergesi kapalı
+        collectionView.backgroundColor = .white
+        collectionView.isPagingEnabled = true
+        collectionView.showsHorizontalScrollIndicator = false
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         return collectionView
     }()
