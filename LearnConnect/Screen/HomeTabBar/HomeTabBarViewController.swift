@@ -15,10 +15,12 @@ class HomeTabBarViewController: UITabBarController {
 
         let homeViewController = createHomeViewController()
         let favoritesViewController = createFavoritesController()
+        let subscribeViewController = createSubscribeController()
 
         viewControllers = [
             homeViewController,
-            favoritesViewController
+            favoritesViewController,
+            subscribeViewController
         ]
     }
     
@@ -41,4 +43,15 @@ class HomeTabBarViewController: UITabBarController {
         favoritesRouter.viewController = favoritesViewController
         return navigationController
     }
+    
+    private func createSubscribeController() -> UINavigationController {
+        let subscribeRouter = SubscribeRouter()
+        let subscribeViewModel = SubscribeViewModel(router: subscribeRouter)
+        let subscribeViewController = SubscribeViewController(viewModel: subscribeViewModel)
+        let navigationController = MainNavigationController(rootViewController: subscribeViewController)
+        navigationController.tabBarItem.image = UIImage.init(systemName: "bell")
+        subscribeRouter.viewController = subscribeViewController
+        return navigationController
+    }
+
 }

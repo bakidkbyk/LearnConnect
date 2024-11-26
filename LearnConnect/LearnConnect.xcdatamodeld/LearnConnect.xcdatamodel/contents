@@ -3,5 +3,7 @@
     <entity name="Data" representedClassName="Data" syncable="YES" codeGenerationType="class">
         <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="title" optional="YES" attributeType="String"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
     </entity>
+    <entity name="Subscribe" representedClassName="Subscribe" syncable="YES" codeGenerationType="class"/>
 </model>
