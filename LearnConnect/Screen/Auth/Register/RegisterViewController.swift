@@ -195,42 +195,6 @@ extension RegisterViewController {
     
     @objc
     func didTapSignUp() {
-//        let registerUserRequest = RegiserUserRequest(
-//            username: self.usernameTextField.text ?? "",
-//            email: self.emailTextField.text ?? "",
-//            password: self.passwordTextField.text ?? ""
-//        )
-//        
-//        if !Validator.isValidUsername(for: registerUserRequest.username) {
-//            AlertManager.showInvalidUsernameAlert(on: self)
-//            return
-//        }
-//        
-//        if !Validator.isValidEmail(for: registerUserRequest.email) {
-//            AlertManager.showInvalidEmailAlert(on: self)
-//            return
-//        }
-//        
-//        if !Validator.isPasswordValid(for: registerUserRequest.password) {
-//            AlertManager.showInvalidPasswordAlert(on: self)
-//            return
-//        }
-//        
-//        AuthService.shared.registerUser(with: registerUserRequest) { [weak self] wasRegistered, error in
-//            guard let self = self else { return }
-//            
-//            if let error = error {
-//                AlertManager.showRegistrationErrorAlert(on: self, with: error)
-//                return
-//            }
-//            
-//            if wasRegistered {
-//                viewModel.showLoginScreen()
-//            } else {
-//                AlertManager.showRegistrationErrorAlert(on: self)
-//            }
-//        }
-        
         guard let username = usernameTextField.text,
               let email    = emailTextField.text,
               let password = passwordTextField.text else {

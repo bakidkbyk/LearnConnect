@@ -11,10 +11,12 @@ protocol HomeViewDataSource {}
 
 protocol HomeViewEventSource {}
 
-protocol HomeViewProtocol: HomeViewDataSource, HomeViewEventSource {}
+protocol HomeViewProtocol: HomeViewDataSource, HomeViewEventSource {
+    func profileIconTapped()
+}
 
 final class HomeViewModel: BaseViewModel<HomeViewRouter>, HomeViewProtocol {
-    
+
     var titles = ["Matematik", "Fizik", "Kimya", "Tarih", "Biyoloji"]
     var filteredTitles = [String]()
     var searchItems = [String]()
@@ -44,4 +46,9 @@ final class HomeViewModel: BaseViewModel<HomeViewRouter>, HomeViewProtocol {
             print("Aynı ID'ye sahip veri zaten mevcut.")
         }
     }
+    
+    func profileIconTapped() {
+        router.pushProfile()
+    }
+    
 }

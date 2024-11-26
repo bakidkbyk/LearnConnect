@@ -11,7 +11,7 @@ public class FloatLabelTextField: UITextField {
     
     private let titleLabel: UILabel = {
         let label = UILabel()
-        label.textColor = UIColor.black
+        label.textColor = .label
         label.layer.borderColor = UIColor.gray.cgColor
         label.font = UIFont.systemFont(ofSize: 18)
         return label
