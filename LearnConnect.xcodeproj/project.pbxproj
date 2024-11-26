@@ -69,6 +69,11 @@
 		8966CDA22CF4FB5C00196AE3 /* FavoritesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8966CDA12CF4FB5C00196AE3 /* FavoritesViewModel.swift */; };
 		8966CDA42CF4FB7100196AE3 /* FavoritesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8966CDA32CF4FB7100196AE3 /* FavoritesRouter.swift */; };
 		8966CDA62CF4FC4F00196AE3 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8966CDA52CF4FC4F00196AE3 /* MainNavigationController.swift */; };
+		8966CDB52CF54B0100196AE3 /* FavoritesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8966CDB42CF54B0100196AE3 /* FavoritesTableViewCell.swift */; };
+		8966CDB72CF54B1100196AE3 /* FavoritesTableViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8966CDB62CF54B1100196AE3 /* FavoritesTableViewCellModel.swift */; };
+		8966CDBA2CF550B400196AE3 /* LearnConnect.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8966CDB82CF550B400196AE3 /* LearnConnect.xcdatamodeld */; };
+		8966CDBD2CF556BA00196AE3 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8966CDBC2CF556BA00196AE3 /* CoreDataManager.swift */; };
+		8966CDC02CF56DFB00196AE3 /* Notification+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8966CDBF2CF56DFB00196AE3 /* Notification+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -131,6 +136,11 @@
 		8966CDA12CF4FB5C00196AE3 /* FavoritesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewModel.swift; sourceTree = "<group>"; };
 		8966CDA32CF4FB7100196AE3 /* FavoritesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesRouter.swift; sourceTree = "<group>"; };
 		8966CDA52CF4FC4F00196AE3 /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
+		8966CDB42CF54B0100196AE3 /* FavoritesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewCell.swift; sourceTree = "<group>"; };
+		8966CDB62CF54B1100196AE3 /* FavoritesTableViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewCellModel.swift; sourceTree = "<group>"; };
+		8966CDB92CF550B400196AE3 /* LearnConnect.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LearnConnect.xcdatamodel; sourceTree = "<group>"; };
+		8966CDBC2CF556BA00196AE3 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		8966CDBF2CF56DFB00196AE3 /* Notification+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,7 +181,6 @@
 			children = (
 				8966CD6B2CF413A400196AE3 /* Utilities */,
 				8966CD4E2CF3B5D500196AE3 /* DataProvider */,
-				8966CD3F2CF37FF800196AE3 /* Validation */,
 				2D639AA12CF25A5300C6E69A /* UIComponents */,
 				8966CD3B2CF370F000196AE3 /* Screen */,
 				2D639A722CF250C500C6E69A /* Routing */,
@@ -179,6 +188,7 @@
 				8966CD392CF36EC500196AE3 /* AppDelegate */,
 				2D639A662CF249C700C6E69A /* LaunchScreen.storyboard */,
 				2D639A692CF249C700C6E69A /* Info.plist */,
+				8966CDB82CF550B400196AE3 /* LearnConnect.xcdatamodeld */,
 			);
 			path = LearnConnect;
 			sourceTree = "<group>";
@@ -265,6 +275,7 @@
 		2D639AA12CF25A5300C6E69A /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				8966CD3F2CF37FF800196AE3 /* Validation */,
 				8966CD932CF49B6A00196AE3 /* Cell */,
 				8966CD902CF4511600196AE3 /* Extensions */,
 				8966CD8D2CF44BB800196AE3 /* UIPageControl */,
@@ -342,6 +353,7 @@
 		8966CD4E2CF3B5D500196AE3 /* DataProvider */ = {
 			isa = PBXGroup;
 			children = (
+				8966CDBB2CF556A900196AE3 /* CoreDataManager */,
 				8966CD3C2CF370FD00196AE3 /* AuthService */,
 				8966CD4F2CF3B5E000196AE3 /* Request */,
 			);
@@ -453,6 +465,7 @@
 			isa = PBXGroup;
 			children = (
 				8966CD912CF4512500196AE3 /* UICollectionView+Extensions.swift */,
+				8966CDBF2CF56DFB00196AE3 /* Notification+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -460,6 +473,7 @@
 		8966CD932CF49B6A00196AE3 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				8966CDB32CF54AEB00196AE3 /* FavoritesCell */,
 				8966CD942CF49BD900196AE3 /* HomeTableViewCell */,
 				8966CD852CF440D100196AE3 /* WalkthroughCell */,
 			);
@@ -492,6 +506,23 @@
 				8966CDA32CF4FB7100196AE3 /* FavoritesRouter.swift */,
 			);
 			path = Favorites;
+			sourceTree = "<group>";
+		};
+		8966CDB32CF54AEB00196AE3 /* FavoritesCell */ = {
+			isa = PBXGroup;
+			children = (
+				8966CDB42CF54B0100196AE3 /* FavoritesTableViewCell.swift */,
+				8966CDB62CF54B1100196AE3 /* FavoritesTableViewCellModel.swift */,
+			);
+			path = FavoritesCell;
+			sourceTree = "<group>";
+		};
+		8966CDBB2CF556A900196AE3 /* CoreDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				8966CDBC2CF556BA00196AE3 /* CoreDataManager.swift */,
+			);
+			path = CoreDataManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -577,6 +608,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8966CDB52CF54B0100196AE3 /* FavoritesTableViewCell.swift in Sources */,
 				8966CDA62CF4FC4F00196AE3 /* MainNavigationController.swift in Sources */,
 				8966CD822CF439FD00196AE3 /* WalkthroughRouter.swift in Sources */,
 				8966CD5B2CF3BEDD00196AE3 /* LoginViewController.swift in Sources */,
@@ -607,6 +639,8 @@
 				8966CD712CF4186200196AE3 /* ActivityIndicatorView.swift in Sources */,
 				8966CDA42CF4FB7100196AE3 /* FavoritesRouter.swift in Sources */,
 				8966CD7E2CF439D500196AE3 /* WalkthroughViewController.swift in Sources */,
+				8966CDC02CF56DFB00196AE3 /* Notification+Extensions.swift in Sources */,
+				8966CDBA2CF550B400196AE3 /* LearnConnect.xcdatamodeld in Sources */,
 				2D639A9B2CF256AE00C6E69A /* RegisterRouter.swift in Sources */,
 				2D639A9D2CF256AE00C6E69A /* RegisterViewModel.swift in Sources */,
 				2D639A8B2CF2523700C6E69A /* BaseViewModel.swift in Sources */,
@@ -625,9 +659,11 @@
 				8966CD7B2CF4207700196AE3 /* Validation.swift in Sources */,
 				2D639A5C2CF249C400C6E69A /* AppDelegate.swift in Sources */,
 				8966CD982CF49C0500196AE3 /* HomeTableViewCellModel.swift in Sources */,
+				8966CDB72CF54B1100196AE3 /* FavoritesTableViewCellModel.swift in Sources */,
 				2D639A9C2CF256AE00C6E69A /* RegisterViewController.swift in Sources */,
 				2D639A822CF251B800C6E69A /* Transition.swift in Sources */,
 				2D639A912CF2531600C6E69A /* HomeViewController.swift in Sources */,
+				8966CDBD2CF556BA00196AE3 /* CoreDataManager.swift in Sources */,
 				8966CDA22CF4FB5C00196AE3 /* FavoritesViewModel.swift in Sources */,
 				2D639A7E2CF2519600C6E69A /* PlaceOnWindowTransition.swift in Sources */,
 				8966CD8C2CF44A0B00196AE3 /* WalkthroughCellModel.swift in Sources */,
@@ -906,6 +942,19 @@
 			productName = SwiftEntryKit;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		8966CDB82CF550B400196AE3 /* LearnConnect.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8966CDB92CF550B400196AE3 /* LearnConnect.xcdatamodel */,
+			);
+			currentVersion = 8966CDB92CF550B400196AE3 /* LearnConnect.xcdatamodel */;
+			path = LearnConnect.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 2D639A502CF249C400C6E69A /* Project object */;
 }

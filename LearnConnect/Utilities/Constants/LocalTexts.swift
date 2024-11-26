@@ -47,3 +47,15 @@ struct WalkthroughTexts {
     static let nextActionButtonNext = "İlerle"
     static let nextActionButtonStart = "Başla"
 }
+
+// MARK: - Home
+struct HomeTexts {
+    
+    static let navigationTitle = "LEARN CONNECT"
+    static let searchBarText = "Kategori arayınız."
+}
+
+// MARK: - FavoritesTexts
+struct FavoritesTexts {
+    static let navigationTitle = "FAVORİ DERSLERİM"
+}
