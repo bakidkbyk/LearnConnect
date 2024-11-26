@@ -1,13 +1,13 @@
 //
-//  HomeTableViewCell.swift
+//  FavoritesTableViewCell.swift
 //  LearnConnect
 //
-//  Created by Melih Avcı on 25.11.2024.
+//  Created by Melih Avcı on 26.11.2024.
 //
 
 import UIKit
 
-public class HomeTableViewCell: UITableViewCell {
+public class FavoritesTableViewCell: UITableViewCell {
     
     private let titleLabel: UILabel = {
         let label = UILabel()
@@ -38,7 +38,7 @@ public class HomeTableViewCell: UITableViewCell {
         return stackView
     }()
     
-    var viewModel: HomeTableViewCellProtocol?
+    var viewModel: FavoritesTableViewCellModelProtocol?
     
     var buttonAction: (() -> Void)?
     
@@ -67,16 +67,11 @@ public class HomeTableViewCell: UITableViewCell {
     func configure(title: String) {
         titleLabel.text = title
     }
-    
-    public var title: String? {
-        willSet {
-            titleLabel.text = newValue
-        }
-    }
 }
 
+
 // MARK: - UI Layout
-extension HomeTableViewCell {
+extension FavoritesTableViewCell {
     private func addSubviews() {
         contentView.addSubview(containerView)
         containerView.addSubview(stackView)
@@ -99,8 +94,8 @@ extension HomeTableViewCell {
 }
 
 // MARK: - Set ViewModel
-extension HomeTableViewCell {
-    public func set(viewModel: HomeTableViewCellProtocol) {
+extension FavoritesTableViewCell {
+    public func set(viewModel: FavoritesTableViewCellModelProtocol) {
         self.viewModel = viewModel
         self.titleLabel.text = viewModel.titleLabel
     }

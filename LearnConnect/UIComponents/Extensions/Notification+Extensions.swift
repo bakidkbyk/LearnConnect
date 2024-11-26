@@ -1,0 +1,12 @@
+//
+//  Notification+Extensions.swift
+//  LearnConnect
+//
+//  Created by Melih Avcı on 26.11.2024.
+//
+
+import Foundation
+
+extension Notification.Name {
+    static let favoriteAdded = Notification.Name("favoriteAdded")
+}
