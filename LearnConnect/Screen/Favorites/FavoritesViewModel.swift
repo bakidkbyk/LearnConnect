@@ -13,4 +13,8 @@ protocol FavoritesViewEventSource {}
 
 protocol FavoritesViewProtocol: FavoritesViewDataSource, FavoritesViewEventSource {}
 
-final class FavoritesViewModel: BaseViewModel<FavoritesRouter>, FavoritesViewProtocol {}
+final class FavoritesViewModel: BaseViewModel<FavoritesRouter>, FavoritesViewProtocol {
+    
+    var favoriteItems: [Data] = []
+
+}
