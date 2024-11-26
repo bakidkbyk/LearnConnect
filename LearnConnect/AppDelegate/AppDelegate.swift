@@ -5,24 +5,6 @@
 //  Created by Baki Dikbıyık on 23.11.2024.
 //
 
-//import UIKit
-//import FirebaseCore
-
-//@main
-//class AppDelegate: UIResponder, UIApplicationDelegate {
-//    
-//    var window: UIWindow?
-//    
-//    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-//        FirebaseApp.configure()
-//        let bounds = UIScreen.main.bounds
-//        self.window = UIWindow(frame: bounds)
-//        AppRouter.shared.startApp()
-//        self.window?.makeKeyAndVisible()
-//        return true
-//    }
-//}
-
 import UIKit
 import FirebaseCore
 import CoreData
@@ -62,10 +44,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let bounds = UIScreen.main.bounds
         self.window = UIWindow(frame: bounds)
         AppRouter.shared.startApp()
+        
+        let savedThemeIndex = UserDefaults.standard.integer(forKey: "themeMode")
+        let style: UIUserInterfaceStyle = savedThemeIndex == 0 ? .light : .dark
+        updateTheme(to: style)
+        
         self.window?.makeKeyAndVisible()
         
         return true
     }
+    
+    func updateTheme(to style: UIUserInterfaceStyle) {
+        if let window = self.window {
+            window.overrideUserInterfaceStyle = style
+        }
+    }
+    
+//    private func applyTheme() {
+//        let savedTheme = UserDefaults.standard.integer(forKey: "themeMode")
+//        let style: UIUserInterfaceStyle = savedTheme == 1 ? .dark : .light
+//        window?.overrideUserInterfaceStyle = style
+//    }
     
     func applicationWillTerminate(_ application: UIApplication) {
         saveContext()

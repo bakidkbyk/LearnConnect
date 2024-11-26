@@ -24,6 +24,7 @@ final class HomeViewController: BaseViewController<HomeViewModel> {
         addSubviews()
         configureContents()
         setLocalize()
+        setupNavigationBar()
     }
     
     // MARK: - Add subviews and configure contents
@@ -43,6 +44,15 @@ final class HomeViewController: BaseViewController<HomeViewModel> {
 
     private func setLocalize() {
         searchBar.placeholder = HomeTexts.searchBarText
+    }
+    
+    private func setupNavigationBar() {
+        let profileButton = UIBarButtonItem(image: UIImage(systemName: "person.circle"), style: .plain, target: self, action: #selector(profileButtonTapped))
+        navigationItem.rightBarButtonItem = profileButton
+    }
+
+    @objc private func profileButtonTapped() {
+        viewModel.profileIconTapped()
     }
 }
 

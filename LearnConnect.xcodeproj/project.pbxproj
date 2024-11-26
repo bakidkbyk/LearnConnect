@@ -37,7 +37,6 @@
 		8966CD512CF3B61D00196AE3 /* RegisterUserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8966CD502CF3B61D00196AE3 /* RegisterUserRequest.swift */; };
 		8966CD542CF3B8A900196AE3 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8966CD532CF3B8A900196AE3 /* LoginRequest.swift */; };
 		8966CD562CF3BAAD00196AE3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8966CD552CF3BAAD00196AE3 /* User.swift */; };
-		8966CD582CF3BC6B00196AE3 /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8966CD572CF3BC6B00196AE3 /* AlertManager.swift */; };
 		8966CD5B2CF3BEDD00196AE3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8966CD5A2CF3BEDD00196AE3 /* LoginViewController.swift */; };
 		8966CD5D2CF3BF4900196AE3 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8966CD5C2CF3BF4900196AE3 /* LoginViewModel.swift */; };
 		8966CD5F2CF3BF9200196AE3 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8966CD5E2CF3BF9200196AE3 /* LoginRouter.swift */; };
@@ -78,6 +77,10 @@
 		8966CDC72CF575F800196AE3 /* SubscribeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8966CDC62CF575F800196AE3 /* SubscribeRouter.swift */; };
 		8966CDCC2CF5BEA300196AE3 /* SubscribeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8966CDCB2CF5BEA300196AE3 /* SubscribeTableViewCell.swift */; };
 		8966CDCE2CF5BEBC00196AE3 /* SubscribeTableViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8966CDCD2CF5BEBC00196AE3 /* SubscribeTableViewCellModel.swift */; };
+		8966CDD12CF5E7CA00196AE3 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8966CDD02CF5E7CA00196AE3 /* ProfileViewController.swift */; };
+		8966CDD32CF5E7D200196AE3 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8966CDD22CF5E7D200196AE3 /* ProfileViewModel.swift */; };
+		8966CDD52CF5E7DC00196AE3 /* ProfileRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8966CDD42CF5E7DC00196AE3 /* ProfileRouter.swift */; };
+		8966CDD72CF5ED5800196AE3 /* ProfileRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8966CDD62CF5ED5800196AE3 /* ProfileRoute.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -109,7 +112,6 @@
 		8966CD502CF3B61D00196AE3 /* RegisterUserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUserRequest.swift; sourceTree = "<group>"; };
 		8966CD532CF3B8A900196AE3 /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
 		8966CD552CF3BAAD00196AE3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		8966CD572CF3BC6B00196AE3 /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
 		8966CD5A2CF3BEDD00196AE3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8966CD5C2CF3BF4900196AE3 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		8966CD5E2CF3BF9200196AE3 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
@@ -149,6 +151,10 @@
 		8966CDC62CF575F800196AE3 /* SubscribeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeRouter.swift; sourceTree = "<group>"; };
 		8966CDCB2CF5BEA300196AE3 /* SubscribeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeTableViewCell.swift; sourceTree = "<group>"; };
 		8966CDCD2CF5BEBC00196AE3 /* SubscribeTableViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeTableViewCellModel.swift; sourceTree = "<group>"; };
+		8966CDD02CF5E7CA00196AE3 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		8966CDD22CF5E7D200196AE3 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		8966CDD42CF5E7DC00196AE3 /* ProfileRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRouter.swift; sourceTree = "<group>"; };
+		8966CDD62CF5ED5800196AE3 /* ProfileRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRoute.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -323,6 +329,7 @@
 		8966CD3B2CF370F000196AE3 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				8966CDCF2CF5E7B800196AE3 /* Profile */,
 				8966CDC12CF5753F00196AE3 /* Subscribe */,
 				2D639A8C2CF252A100C6E69A /* Home */,
 				8966CDA02CF4F78300196AE3 /* Favorites */,
@@ -345,7 +352,6 @@
 		8966CD3F2CF37FF800196AE3 /* Validation */ = {
 			isa = PBXGroup;
 			children = (
-				8966CD572CF3BC6B00196AE3 /* AlertManager.swift */,
 				8966CD7A2CF4207700196AE3 /* Validation.swift */,
 			);
 			path = Validation;
@@ -545,6 +551,17 @@
 			path = SubscribeCell;
 			sourceTree = "<group>";
 		};
+		8966CDCF2CF5E7B800196AE3 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				8966CDD02CF5E7CA00196AE3 /* ProfileViewController.swift */,
+				8966CDD22CF5E7D200196AE3 /* ProfileViewModel.swift */,
+				8966CDD42CF5E7DC00196AE3 /* ProfileRouter.swift */,
+				8966CDD62CF5ED5800196AE3 /* ProfileRoute.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -634,6 +651,7 @@
 				8966CD5B2CF3BEDD00196AE3 /* LoginViewController.swift in Sources */,
 				8966CD9D2CF4F6C900196AE3 /* HomeTabBarRoute.swift in Sources */,
 				8966CD842CF43A0600196AE3 /* WalkthroughRoute.swift in Sources */,
+				8966CDD12CF5E7CA00196AE3 /* ProfileViewController.swift in Sources */,
 				8966CD9B2CF4F6B400196AE3 /* HomeTabBarViewController.swift in Sources */,
 				8966CD562CF3BAAD00196AE3 /* User.swift in Sources */,
 				2D639A7A2CF2511400C6E69A /* Router.swift in Sources */,
@@ -653,9 +671,9 @@
 				8966CD612CF3BFB000196AE3 /* LoginRoute.swift in Sources */,
 				8966CD682CF4105A00196AE3 /* LoadingProtocol.swift in Sources */,
 				2D639A8A2CF2523700C6E69A /* BaseViewController.swift in Sources */,
-				8966CD582CF3BC6B00196AE3 /* AlertManager.swift in Sources */,
 				2D639A782CF2510700C6E69A /* Animator.swift in Sources */,
 				8966CD802CF439F100196AE3 /* WalkthroughViewModel.swift in Sources */,
+				8966CDD72CF5ED5800196AE3 /* ProfileRoute.swift in Sources */,
 				8966CD9F2CF4F77C00196AE3 /* FavoritesViewController.swift in Sources */,
 				8966CD712CF4186200196AE3 /* ActivityIndicatorView.swift in Sources */,
 				8966CDA42CF4FB7100196AE3 /* FavoritesRouter.swift in Sources */,
@@ -676,10 +694,12 @@
 				2D639A942CF2532300C6E69A /* HomeViewRoute.swift in Sources */,
 				8966CD662CF4104900196AE3 /* ActivityIndicatorProtocol.swift in Sources */,
 				8966CD5D2CF3BF4900196AE3 /* LoginViewModel.swift in Sources */,
+				8966CDD32CF5E7D200196AE3 /* ProfileViewModel.swift in Sources */,
 				8966CD542CF3B8A900196AE3 /* LoginRequest.swift in Sources */,
 				2D639AAB2CF2699400C6E69A /* LocalTexts.swift in Sources */,
 				8966CD7B2CF4207700196AE3 /* Validation.swift in Sources */,
 				2D639A5C2CF249C400C6E69A /* AppDelegate.swift in Sources */,
+				8966CDD52CF5E7DC00196AE3 /* ProfileRouter.swift in Sources */,
 				8966CD982CF49C0500196AE3 /* HomeTableViewCellModel.swift in Sources */,
 				8966CDCC2CF5BEA300196AE3 /* SubscribeTableViewCell.swift in Sources */,
 				8966CDB72CF54B1100196AE3 /* FavoritesTableViewCellModel.swift in Sources */,

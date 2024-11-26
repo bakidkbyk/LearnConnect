@@ -24,5 +24,4 @@ public class ActivityIndicatorView: UIActivityIndicatorView {
         tintColor = .gray
         hidesWhenStopped = true
     }
-    
 }

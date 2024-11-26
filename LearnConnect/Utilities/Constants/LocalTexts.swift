@@ -64,3 +64,8 @@ struct FavoritesTexts {
 struct SubscribeTexts {
     static let navigationTitle = "ABONE DERSLERİM"
 }
+
+// MARK: - ProfileTexts
+struct ProfileTexts {
+    static let navigationTitle = "PROFİLİM"
+}
