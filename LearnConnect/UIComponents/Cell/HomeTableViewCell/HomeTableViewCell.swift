@@ -45,14 +45,12 @@ public class HomeTableViewCell: UITableViewCell {
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         addSubviews()
-        configureLayout()
         setupButtonAction()
     }
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         addSubviews()
-        configureLayout()
         setupButtonAction()
     }
     
@@ -67,24 +65,12 @@ public class HomeTableViewCell: UITableViewCell {
     func configure(title: String) {
         titleLabel.text = title
     }
-    
-    public var title: String? {
-        willSet {
-            titleLabel.text = newValue
-        }
-    }
 }
 
 // MARK: - UI Layout
 extension HomeTableViewCell {
+
     private func addSubviews() {
-        contentView.addSubview(containerView)
-        containerView.addSubview(stackView)
-        stackView.addArrangedSubview(titleLabel)
-        stackView.addArrangedSubview(button)
-    }
-    
-    private func configureLayout() {
         contentView.addSubview(containerView)
         containerView.edgesToSuperview(insets: .horizontal(16))
 

@@ -6,6 +6,7 @@
 //
 
 import CoreData
+import UIKit
 
 protocol HomeViewDataSource {}
 
@@ -20,6 +21,7 @@ final class HomeViewModel: BaseViewModel<HomeViewRouter>, HomeViewProtocol {
     var titles = ["Matematik", "Fizik", "Kimya", "Tarih", "Biyoloji"]
     var filteredTitles = [String]()
     var searchItems = [String]()
+    var courseName: String = ""
     
     func addToFavorites(title: String) {
         let id = Int64(Date().timeIntervalSince1970)
@@ -46,9 +48,21 @@ final class HomeViewModel: BaseViewModel<HomeViewRouter>, HomeViewProtocol {
             print("Aynı ID'ye sahip veri zaten mevcut.")
         }
     }
-    
+ 
     func profileIconTapped() {
         router.pushProfile()
     }
+}
+
+// MARK: - Action
+extension HomeViewModel {
     
+    func didSelectCourse(indexPath: IndexPath) {
+        let selectedTitle = filteredTitles[indexPath.row]
+        let imageName = selectedTitle.lowercased()
+        let image = UIImage(named: imageName)
+        
+        router.pushCourseDetailRoute(title: selectedTitle, image: image!)
+    }
+
 }
