@@ -18,6 +18,8 @@ final class HomeViewController: BaseViewController<HomeViewModel> {
     }()
     
     private var searchTimer: Timer?
+    private var router: CourseDetailRoute?
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -103,8 +105,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
-        print("Tapped on: \(viewModel.filteredTitles[indexPath.row])")
+        viewModel.didSelectCourse(indexPath: indexPath)
     }
 
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {

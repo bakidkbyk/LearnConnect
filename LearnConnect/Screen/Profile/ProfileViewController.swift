@@ -35,17 +35,15 @@ final class ProfileViewController: BaseViewController<ProfileViewModel> {
         return label
     }()
     
-    
     private let themeSegmentedControl: UISegmentedControl = {
         let items = ["Light", "Dark"]
         let segmentControl = UISegmentedControl(items: items)
         segmentControl.selectedSegmentIndex = UserDefaults.standard.integer(forKey: "themeMode")
-        segmentControl.addTarget(self, action: #selector(themeChanged(_:)), for: .valueChanged)
+        segmentControl.addTarget(ProfileViewController.self, action: #selector(themeChanged(_:)), for: .valueChanged)
         segmentControl.translatesAutoresizingMaskIntoConstraints = false
         return segmentControl
     }()
 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         addSubviews()
@@ -74,7 +72,7 @@ extension ProfileViewController {
 extension ProfileViewController {
     
     private func addSubviews() {
- 
+
         view.addSubview(contentStackView)
         contentStackView.centerXToSuperview()
         contentStackView.centerYToSuperview()
@@ -90,13 +88,11 @@ extension ProfileViewController {
     
     private func configureContents() {
         view.backgroundColor = .white
-
     }
     
     private func setLocalize() {
         navigationItem.title = ProfileTexts.navigationTitle
     }
-
 }
 
 // MARK: - Fetch User Data
@@ -118,4 +114,3 @@ extension ProfileViewController {
         }
     }
 }
-

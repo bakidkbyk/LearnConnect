@@ -60,12 +60,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
     
-//    private func applyTheme() {
-//        let savedTheme = UserDefaults.standard.integer(forKey: "themeMode")
-//        let style: UIUserInterfaceStyle = savedTheme == 1 ? .dark : .light
-//        window?.overrideUserInterfaceStyle = style
-//    }
-    
     func applicationWillTerminate(_ application: UIApplication) {
         saveContext()
     }

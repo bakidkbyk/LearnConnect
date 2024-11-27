@@ -45,14 +45,12 @@ public class FavoritesTableViewCell: UITableViewCell {
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         addSubviews()
-        configureLayout()
         setupButtonAction()
     }
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         addSubviews()
-        configureLayout()
         setupButtonAction()
     }
     
@@ -69,17 +67,10 @@ public class FavoritesTableViewCell: UITableViewCell {
     }
 }
 
-
 // MARK: - UI Layout
 extension FavoritesTableViewCell {
-    private func addSubviews() {
-        contentView.addSubview(containerView)
-        containerView.addSubview(stackView)
-        stackView.addArrangedSubview(titleLabel)
-        stackView.addArrangedSubview(button)
-    }
     
-    private func configureLayout() {
+    private func addSubviews() {
         contentView.addSubview(containerView)
         containerView.edgesToSuperview(insets: .horizontal(16))
 

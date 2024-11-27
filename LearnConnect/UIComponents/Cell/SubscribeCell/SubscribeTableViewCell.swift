@@ -45,14 +45,12 @@ public class SubscribeTableViewCell: UITableViewCell {
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         addSubviews()
-        configureLayout()
         setupButtonAction()
     }
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         addSubviews()
-        configureLayout()
         setupButtonAction()
     }
     
@@ -71,14 +69,8 @@ public class SubscribeTableViewCell: UITableViewCell {
 
 // MARK: - UI Layout
 extension SubscribeTableViewCell {
+
     private func addSubviews() {
-        contentView.addSubview(containerView)
-        containerView.addSubview(stackView)
-        stackView.addArrangedSubview(titleLabel)
-        stackView.addArrangedSubview(button)
-    }
-    
-    private func configureLayout() {
         contentView.addSubview(containerView)
         containerView.edgesToSuperview(insets: .horizontal(16))
 

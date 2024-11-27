@@ -8,12 +8,12 @@
 import UIKit
 
 protocol HomeViewRoute {
-    func presentHome()
+    func pushHome()
 }
 
 extension HomeViewRoute where Self: RouterProtocol {
     
-    func presentHome() {
+    func pushHome() {
         let router = HomeViewRouter()
         let viewModel = HomeViewModel(router: router)
         let viewController = HomeViewController(viewModel: viewModel)

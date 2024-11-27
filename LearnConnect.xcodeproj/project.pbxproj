@@ -81,6 +81,18 @@
 		8966CDD32CF5E7D200196AE3 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8966CDD22CF5E7D200196AE3 /* ProfileViewModel.swift */; };
 		8966CDD52CF5E7DC00196AE3 /* ProfileRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8966CDD42CF5E7DC00196AE3 /* ProfileRouter.swift */; };
 		8966CDD72CF5ED5800196AE3 /* ProfileRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8966CDD62CF5ED5800196AE3 /* ProfileRoute.swift */; };
+		8966CDDA2CF672AA00196AE3 /* CourseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8966CDD92CF672AA00196AE3 /* CourseDetailViewController.swift */; };
+		8966CDDC2CF672B600196AE3 /* CourseDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8966CDDB2CF672B600196AE3 /* CourseDetailViewModel.swift */; };
+		8966CDDE2CF672C100196AE3 /* CourseDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8966CDDD2CF672C100196AE3 /* CourseDetailRouter.swift */; };
+		8966CDE02CF67B3E00196AE3 /* CourseDetailRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8966CDDF2CF67B3E00196AE3 /* CourseDetailRoute.swift */; };
+		8966CE042CF6B7EF00196AE3 /* CourseVideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8966CE032CF6B7EF00196AE3 /* CourseVideoTableViewCell.swift */; };
+		8966CE062CF6B88B00196AE3 /* CourseVideoTableViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8966CE052CF6B88A00196AE3 /* CourseVideoTableViewCellModel.swift */; };
+		8966CE0C2CF6C3B500196AE3 /* kimya.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8966CE092CF6C3B500196AE3 /* kimya.mp4 */; };
+		8966CE0D2CF6C3B500196AE3 /* matematik.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8966CE0A2CF6C3B500196AE3 /* matematik.mp4 */; };
+		8966CE0E2CF6C3B500196AE3 /* fizik.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8966CE082CF6C3B500196AE3 /* fizik.mp4 */; };
+		8966CE0F2CF6C3B500196AE3 /* tarih.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8966CE0B2CF6C3B500196AE3 /* tarih.mp4 */; };
+		8966CE102CF6C3B500196AE3 /* biyoloji.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8966CE072CF6C3B500196AE3 /* biyoloji.mp4 */; };
+		8966CE122CF723CC00196AE3 /* SubscribeRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8966CE112CF723CC00196AE3 /* SubscribeRoute.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -155,6 +167,18 @@
 		8966CDD22CF5E7D200196AE3 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		8966CDD42CF5E7DC00196AE3 /* ProfileRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRouter.swift; sourceTree = "<group>"; };
 		8966CDD62CF5ED5800196AE3 /* ProfileRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRoute.swift; sourceTree = "<group>"; };
+		8966CDD92CF672AA00196AE3 /* CourseDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetailViewController.swift; sourceTree = "<group>"; };
+		8966CDDB2CF672B600196AE3 /* CourseDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetailViewModel.swift; sourceTree = "<group>"; };
+		8966CDDD2CF672C100196AE3 /* CourseDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetailRouter.swift; sourceTree = "<group>"; };
+		8966CDDF2CF67B3E00196AE3 /* CourseDetailRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetailRoute.swift; sourceTree = "<group>"; };
+		8966CE032CF6B7EF00196AE3 /* CourseVideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseVideoTableViewCell.swift; sourceTree = "<group>"; };
+		8966CE052CF6B88A00196AE3 /* CourseVideoTableViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseVideoTableViewCellModel.swift; sourceTree = "<group>"; };
+		8966CE072CF6C3B500196AE3 /* biyoloji.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = biyoloji.mp4; sourceTree = "<group>"; };
+		8966CE082CF6C3B500196AE3 /* fizik.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = fizik.mp4; sourceTree = "<group>"; };
+		8966CE092CF6C3B500196AE3 /* kimya.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = kimya.mp4; sourceTree = "<group>"; };
+		8966CE0A2CF6C3B500196AE3 /* matematik.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = matematik.mp4; sourceTree = "<group>"; };
+		8966CE0B2CF6C3B500196AE3 /* tarih.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = tarih.mp4; sourceTree = "<group>"; };
+		8966CE112CF723CC00196AE3 /* SubscribeRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeRoute.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +217,7 @@
 		2D639A5A2CF249C400C6E69A /* LearnConnect */ = {
 			isa = PBXGroup;
 			children = (
+				8966CDE82CF6AE5C00196AE3 /* CourseVideo */,
 				8966CD6B2CF413A400196AE3 /* Utilities */,
 				8966CD4E2CF3B5D500196AE3 /* DataProvider */,
 				2D639AA12CF25A5300C6E69A /* UIComponents */,
@@ -329,6 +354,7 @@
 		8966CD3B2CF370F000196AE3 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				8966CDD82CF6728F00196AE3 /* CourseDetail */,
 				8966CDCF2CF5E7B800196AE3 /* Profile */,
 				8966CDC12CF5753F00196AE3 /* Subscribe */,
 				2D639A8C2CF252A100C6E69A /* Home */,
@@ -479,6 +505,7 @@
 		8966CD932CF49B6A00196AE3 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				8966CE022CF6B7A800196AE3 /* CourseVideoCell */,
 				8966CDCA2CF5BE8E00196AE3 /* SubscribeCell */,
 				8966CDB32CF54AEB00196AE3 /* FavoritesCell */,
 				8966CD942CF49BD900196AE3 /* HomeTableViewCell */,
@@ -538,6 +565,7 @@
 				8966CDC22CF5759D00196AE3 /* SubscribeViewController.swift */,
 				8966CDC42CF575D200196AE3 /* SubscribeViewModel.swift */,
 				8966CDC62CF575F800196AE3 /* SubscribeRouter.swift */,
+				8966CE112CF723CC00196AE3 /* SubscribeRoute.swift */,
 			);
 			path = Subscribe;
 			sourceTree = "<group>";
@@ -560,6 +588,38 @@
 				8966CDD62CF5ED5800196AE3 /* ProfileRoute.swift */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		8966CDD82CF6728F00196AE3 /* CourseDetail */ = {
+			isa = PBXGroup;
+			children = (
+				8966CDD92CF672AA00196AE3 /* CourseDetailViewController.swift */,
+				8966CDDB2CF672B600196AE3 /* CourseDetailViewModel.swift */,
+				8966CDDD2CF672C100196AE3 /* CourseDetailRouter.swift */,
+				8966CDDF2CF67B3E00196AE3 /* CourseDetailRoute.swift */,
+			);
+			path = CourseDetail;
+			sourceTree = "<group>";
+		};
+		8966CDE82CF6AE5C00196AE3 /* CourseVideo */ = {
+			isa = PBXGroup;
+			children = (
+				8966CE072CF6C3B500196AE3 /* biyoloji.mp4 */,
+				8966CE082CF6C3B500196AE3 /* fizik.mp4 */,
+				8966CE092CF6C3B500196AE3 /* kimya.mp4 */,
+				8966CE0A2CF6C3B500196AE3 /* matematik.mp4 */,
+				8966CE0B2CF6C3B500196AE3 /* tarih.mp4 */,
+			);
+			path = CourseVideo;
+			sourceTree = "<group>";
+		};
+		8966CE022CF6B7A800196AE3 /* CourseVideoCell */ = {
+			isa = PBXGroup;
+			children = (
+				8966CE032CF6B7EF00196AE3 /* CourseVideoTableViewCell.swift */,
+				8966CE052CF6B88A00196AE3 /* CourseVideoTableViewCellModel.swift */,
+			);
+			path = CourseVideoCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -633,6 +693,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D639A682CF249C700C6E69A /* LaunchScreen.storyboard in Resources */,
+				8966CE0C2CF6C3B500196AE3 /* kimya.mp4 in Resources */,
+				8966CE0D2CF6C3B500196AE3 /* matematik.mp4 in Resources */,
+				8966CE0E2CF6C3B500196AE3 /* fizik.mp4 in Resources */,
+				8966CE0F2CF6C3B500196AE3 /* tarih.mp4 in Resources */,
+				8966CE102CF6C3B500196AE3 /* biyoloji.mp4 in Resources */,
 				2D639A652CF249C700C6E69A /* Assets.xcassets in Resources */,
 				8966CD632CF3C6CF00196AE3 /* GoogleService-Info.plist in Resources */,
 			);
@@ -651,12 +716,14 @@
 				8966CD5B2CF3BEDD00196AE3 /* LoginViewController.swift in Sources */,
 				8966CD9D2CF4F6C900196AE3 /* HomeTabBarRoute.swift in Sources */,
 				8966CD842CF43A0600196AE3 /* WalkthroughRoute.swift in Sources */,
+				8966CDDC2CF672B600196AE3 /* CourseDetailViewModel.swift in Sources */,
 				8966CDD12CF5E7CA00196AE3 /* ProfileViewController.swift in Sources */,
 				8966CD9B2CF4F6B400196AE3 /* HomeTabBarViewController.swift in Sources */,
 				8966CD562CF3BAAD00196AE3 /* User.swift in Sources */,
 				2D639A7A2CF2511400C6E69A /* Router.swift in Sources */,
 				8966CD872CF4415000196AE3 /* WalkthroughCell.swift in Sources */,
 				8966CD6A2CF4107100196AE3 /* BlockingActivityIndicator.swift in Sources */,
+				8966CDE02CF67B3E00196AE3 /* CourseDetailRoute.swift in Sources */,
 				2D639A902CF2531600C6E69A /* HomeViewRouter.swift in Sources */,
 				8966CD922CF4512500196AE3 /* UICollectionView+Extensions.swift in Sources */,
 				2D639A802CF251A700C6E69A /* PushTransition.swift in Sources */,
@@ -676,11 +743,14 @@
 				8966CDD72CF5ED5800196AE3 /* ProfileRoute.swift in Sources */,
 				8966CD9F2CF4F77C00196AE3 /* FavoritesViewController.swift in Sources */,
 				8966CD712CF4186200196AE3 /* ActivityIndicatorView.swift in Sources */,
+				8966CE122CF723CC00196AE3 /* SubscribeRoute.swift in Sources */,
 				8966CDA42CF4FB7100196AE3 /* FavoritesRouter.swift in Sources */,
+				8966CE062CF6B88B00196AE3 /* CourseVideoTableViewCellModel.swift in Sources */,
 				8966CD7E2CF439D500196AE3 /* WalkthroughViewController.swift in Sources */,
 				8966CDCE2CF5BEBC00196AE3 /* SubscribeTableViewCellModel.swift in Sources */,
 				8966CDC02CF56DFB00196AE3 /* Notification+Extensions.swift in Sources */,
 				8966CDBA2CF550B400196AE3 /* LearnConnect.xcdatamodeld in Sources */,
+				8966CE042CF6B7EF00196AE3 /* CourseVideoTableViewCell.swift in Sources */,
 				8966CDC52CF575D200196AE3 /* SubscribeViewModel.swift in Sources */,
 				2D639A9B2CF256AE00C6E69A /* RegisterRouter.swift in Sources */,
 				2D639A9D2CF256AE00C6E69A /* RegisterViewModel.swift in Sources */,
@@ -707,7 +777,9 @@
 				2D639A822CF251B800C6E69A /* Transition.swift in Sources */,
 				2D639A912CF2531600C6E69A /* HomeViewController.swift in Sources */,
 				8966CDBD2CF556BA00196AE3 /* CoreDataManager.swift in Sources */,
+				8966CDDE2CF672C100196AE3 /* CourseDetailRouter.swift in Sources */,
 				8966CDA22CF4FB5C00196AE3 /* FavoritesViewModel.swift in Sources */,
+				8966CDDA2CF672AA00196AE3 /* CourseDetailViewController.swift in Sources */,
 				2D639A7E2CF2519600C6E69A /* PlaceOnWindowTransition.swift in Sources */,
 				8966CDC32CF5759D00196AE3 /* SubscribeViewController.swift in Sources */,
 				8966CD8C2CF44A0B00196AE3 /* WalkthroughCellModel.swift in Sources */,
