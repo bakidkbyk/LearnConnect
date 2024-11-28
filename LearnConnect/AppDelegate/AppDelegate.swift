@@ -7,6 +7,8 @@
 
 import UIKit
 import FirebaseCore
+import Firebase
+import FirebaseMessaging
 import CoreData
 
 @main
@@ -51,8 +53,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         self.window?.makeKeyAndVisible()
         
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { success, _ in
+            
+            guard success else { return }
+            print("Success is APNS registry")
+        }
+        application.registerForRemoteNotifications()
         return true
     }
+    
+    func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String?) {
+        messaging.token { token, _ in
+            guard let token = token else { return}
+            print("Token: \(token)")
+        }
+    }
+
     
     func updateTheme(to style: UIUserInterfaceStyle) {
         if let window = self.window {
@@ -64,6 +80,3 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         saveContext()
     }
 }
-
-
-

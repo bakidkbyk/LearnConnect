@@ -64,7 +64,11 @@ extension SubscribeViewController {
 }
 
 // MARK: - UITableViewDelegate
-extension SubscribeViewController: UITableViewDelegate {}
+extension SubscribeViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        viewModel.didSelectCourse(indexPath: indexPath)
+    }
+}
 
 // MARK: - UITableViewDataSource
 extension SubscribeViewController: UITableViewDataSource {

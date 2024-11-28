@@ -7,4 +7,6 @@
 
 import Foundation
 
-final class CourseDetailRouter: Router {}
+protocol CourseDetailRouterProtocol {}
+
+final class CourseDetailRouter: Router{}

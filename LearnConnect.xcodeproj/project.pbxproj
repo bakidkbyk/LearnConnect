@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -93,7 +93,20 @@
 		8966CE0F2CF6C3B500196AE3 /* tarih.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8966CE0B2CF6C3B500196AE3 /* tarih.mp4 */; };
 		8966CE102CF6C3B500196AE3 /* biyoloji.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8966CE072CF6C3B500196AE3 /* biyoloji.mp4 */; };
 		8966CE122CF723CC00196AE3 /* SubscribeRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8966CE112CF723CC00196AE3 /* SubscribeRoute.swift */; };
+		89C1B8F22CF75D7A00694912 /* KeyboardHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C1B8F12CF75D7A00694912 /* KeyboardHelper.swift */; };
+		89C1B90E2CF7F38E00694912 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 89C1B90D2CF7F38E00694912 /* FirebaseMessaging */; };
+		89C1B9102CF7F39800694912 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89C1B90F2CF7F39800694912 /* UserNotifications.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		89C1B9192CF81AD700694912 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D639A502CF249C400C6E69A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D639A572CF249C400C6E69A;
+			remoteInfo = LearnConnect;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		2D639A582CF249C400C6E69A /* LearnConnect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnConnect.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -179,18 +192,35 @@
 		8966CE0A2CF6C3B500196AE3 /* matematik.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = matematik.mp4; sourceTree = "<group>"; };
 		8966CE0B2CF6C3B500196AE3 /* tarih.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = tarih.mp4; sourceTree = "<group>"; };
 		8966CE112CF723CC00196AE3 /* SubscribeRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeRoute.swift; sourceTree = "<group>"; };
+		89C1B8F12CF75D7A00694912 /* KeyboardHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardHelper.swift; sourceTree = "<group>"; };
+		89C1B90C2CF7F32F00694912 /* LearnConnectDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LearnConnectDebug.entitlements; sourceTree = "<group>"; };
+		89C1B90F2CF7F39800694912 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		89C1B9152CF81AD700694912 /* LearnConnectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LearnConnectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		89C1B9162CF81AD700694912 /* LearnConnectTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = LearnConnectTests; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		2D639A552CF249C400C6E69A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89C1B90E2CF7F38E00694912 /* FirebaseMessaging in Frameworks */,
 				2D639A712CF24C6B00C6E69A /* TinyConstraints in Frameworks */,
 				8966CD492CF384A200196AE3 /* FirebaseAuth in Frameworks */,
 				8966CD752CF41C9C00196AE3 /* SwiftEntryKit in Frameworks */,
 				8966CD4D2CF384B600196AE3 /* FirebaseCore in Frameworks */,
 				8966CD4B2CF384A200196AE3 /* FirebaseFirestore in Frameworks */,
+				89C1B9102CF7F39800694912 /* UserNotifications.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89C1B9122CF81AD700694912 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,6 +231,7 @@
 			isa = PBXGroup;
 			children = (
 				2D639A5A2CF249C400C6E69A /* LearnConnect */,
+				89C1B9162CF81AD700694912 /* LearnConnectTests */,
 				8966CD472CF384A200196AE3 /* Frameworks */,
 				2D639A592CF249C400C6E69A /* Products */,
 			);
@@ -210,6 +241,7 @@
 			isa = PBXGroup;
 			children = (
 				2D639A582CF249C400C6E69A /* LearnConnect.app */,
+				89C1B9152CF81AD700694912 /* LearnConnectTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -217,6 +249,7 @@
 		2D639A5A2CF249C400C6E69A /* LearnConnect */ = {
 			isa = PBXGroup;
 			children = (
+				89C1B90C2CF7F32F00694912 /* LearnConnectDebug.entitlements */,
 				8966CDE82CF6AE5C00196AE3 /* CourseVideo */,
 				8966CD6B2CF413A400196AE3 /* Utilities */,
 				8966CD4E2CF3B5D500196AE3 /* DataProvider */,
@@ -386,6 +419,7 @@
 		8966CD472CF384A200196AE3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				89C1B90F2CF7F39800694912 /* UserNotifications.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -434,6 +468,7 @@
 		8966CD6B2CF413A400196AE3 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				89C1B8F02CF75D6E00694912 /* Helper */,
 				8966CD6C2CF413B400196AE3 /* Constants */,
 			);
 			path = Utilities;
@@ -622,6 +657,14 @@
 			path = CourseVideoCell;
 			sourceTree = "<group>";
 		};
+		89C1B8F02CF75D6E00694912 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				89C1B8F12CF75D7A00694912 /* KeyboardHelper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -644,10 +687,34 @@
 				8966CD4A2CF384A200196AE3 /* FirebaseFirestore */,
 				8966CD4C2CF384B600196AE3 /* FirebaseCore */,
 				8966CD742CF41C9C00196AE3 /* SwiftEntryKit */,
+				89C1B90D2CF7F38E00694912 /* FirebaseMessaging */,
 			);
 			productName = LearnConnect;
 			productReference = 2D639A582CF249C400C6E69A /* LearnConnect.app */;
 			productType = "com.apple.product-type.application";
+		};
+		89C1B9142CF81AD700694912 /* LearnConnectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89C1B91B2CF81AD700694912 /* Build configuration list for PBXNativeTarget "LearnConnectTests" */;
+			buildPhases = (
+				89C1B9112CF81AD700694912 /* Sources */,
+				89C1B9122CF81AD700694912 /* Frameworks */,
+				89C1B9132CF81AD700694912 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				89C1B91A2CF81AD700694912 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				89C1B9162CF81AD700694912 /* LearnConnectTests */,
+			);
+			name = LearnConnectTests;
+			packageProductDependencies = (
+			);
+			productName = LearnConnectTests;
+			productReference = 89C1B9152CF81AD700694912 /* LearnConnectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -656,11 +723,15 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1510;
+				LastSwiftUpdateCheck = 1610;
 				LastUpgradeCheck = 1510;
 				TargetAttributes = {
 					2D639A572CF249C400C6E69A = {
 						CreatedOnToolsVersion = 15.1;
+					};
+					89C1B9142CF81AD700694912 = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = 2D639A572CF249C400C6E69A;
 					};
 				};
 			};
@@ -683,6 +754,7 @@
 			projectRoot = "";
 			targets = (
 				2D639A572CF249C400C6E69A /* LearnConnect */,
+				89C1B9142CF81AD700694912 /* LearnConnectTests */,
 			);
 		};
 /* End PBXProject section */
@@ -700,6 +772,13 @@
 				8966CE102CF6C3B500196AE3 /* biyoloji.mp4 in Resources */,
 				2D639A652CF249C700C6E69A /* Assets.xcassets in Resources */,
 				8966CD632CF3C6CF00196AE3 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89C1B9132CF81AD700694912 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -744,6 +823,7 @@
 				8966CD9F2CF4F77C00196AE3 /* FavoritesViewController.swift in Sources */,
 				8966CD712CF4186200196AE3 /* ActivityIndicatorView.swift in Sources */,
 				8966CE122CF723CC00196AE3 /* SubscribeRoute.swift in Sources */,
+				89C1B8F22CF75D7A00694912 /* KeyboardHelper.swift in Sources */,
 				8966CDA42CF4FB7100196AE3 /* FavoritesRouter.swift in Sources */,
 				8966CE062CF6B88B00196AE3 /* CourseVideoTableViewCellModel.swift in Sources */,
 				8966CD7E2CF439D500196AE3 /* WalkthroughViewController.swift in Sources */,
@@ -786,7 +866,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		89C1B9112CF81AD700694912 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		89C1B91A2CF81AD700694912 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2D639A572CF249C400C6E69A /* LearnConnect */;
+			targetProxy = 89C1B9192CF81AD700694912 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		2D639A662CF249C700C6E69A /* LaunchScreen.storyboard */ = {
@@ -924,6 +1019,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LearnConnect/LearnConnectDebug.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6KBC8FTKD3;
@@ -981,6 +1077,44 @@
 			};
 			name = Release;
 		};
+		89C1B91C2CF81AD700694912 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6KBC8FTKD3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = UmitBakiDikbiyik.LearnConnect.LearnConnectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LearnConnect.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LearnConnect";
+			};
+			name = Debug;
+		};
+		89C1B91D2CF81AD700694912 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6KBC8FTKD3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = UmitBakiDikbiyik.LearnConnect.LearnConnectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LearnConnect.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LearnConnect";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -998,6 +1132,15 @@
 			buildConfigurations = (
 				2D639A6D2CF249C700C6E69A /* Debug */,
 				2D639A6E2CF249C700C6E69A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		89C1B91B2CF81AD700694912 /* Build configuration list for PBXNativeTarget "LearnConnectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89C1B91C2CF81AD700694912 /* Debug */,
+				89C1B91D2CF81AD700694912 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1056,6 +1199,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 8966CD732CF41C9C00196AE3 /* XCRemoteSwiftPackageReference "SwiftEntryKit" */;
 			productName = SwiftEntryKit;
+		};
+		89C1B90D2CF7F38E00694912 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8966CD462CF3847700196AE3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
 		};
 /* End XCSwiftPackageProductDependency section */
 

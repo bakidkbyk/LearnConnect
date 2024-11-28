@@ -79,4 +79,3 @@ class CoreDataManager {
         return fetchData(predicate: predicate)
     }
 }
-

@@ -7,4 +7,7 @@
 
 import Foundation
 
-final class SubscribeRouter: Router {}
+protocol SubscribeRouterProtocol: CourseDetailRoute { }
+
+final class SubscribeRouter: Router, SubscribeRouterProtocol {}
+

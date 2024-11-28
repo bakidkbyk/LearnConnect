@@ -17,12 +17,12 @@ extension RegisterRoute where Self: RouterProtocol {
         let router = RegisterRouter()
         let viewModel = RegisterViewModel(router: router)
         let viewController = RegisterViewController(viewModel: viewModel)
-
+        let navigationController = MainNavigationController(rootViewController: viewController)
         
         let transition = ModalTransition(isAnimated: true, modalTransitionStyle: .coverVertical, modalPresentationStyle: .fullScreen)
         router.viewController = viewController
         router.openTransition = transition
         
-        open(viewController, transition: transition)
+        open(navigationController, transition: transition)
     }
 }

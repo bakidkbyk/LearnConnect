@@ -25,7 +25,7 @@ final class LoginViewModel: BaseViewModel<LoginRouter>, LoginViewProtocol  {
     }
     
     func newUserTapped() {
-        router.close()
+        router.pushRegister()
     }
     
 }
@@ -40,6 +40,8 @@ extension LoginViewModel {
         AuthService.shared.signIn(with: loginRequest) { [weak self] error, wasLogin in
             guard let self = self else { return }
             self.hideLoading?()
+            self.showWarningToast?("Başarılı")
+
             
             if let error = error {
                 self.showWarningToast?(error.localizedDescription)
@@ -47,6 +49,7 @@ extension LoginViewModel {
             }
             
             if wasLogin {
+                UserDefaults.standard.set(true, forKey: "isUserLoggedIn")
                 loginSuccess()
             } else {
                 self.showWarningToast?("Bilinmeyen bir hata oluştu. Lütfen tekrar deneyin.")

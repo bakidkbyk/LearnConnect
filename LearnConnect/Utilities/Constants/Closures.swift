@@ -9,4 +9,4 @@ import Foundation
 
 public typealias VoidClosure   = (() -> Void)
 public typealias StringClosure = ((String) -> Void)
-
+public typealias IndexPathClosure = ((IndexPath) -> Void)

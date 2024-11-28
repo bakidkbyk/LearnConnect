@@ -11,5 +11,4 @@ extension Notification.Name {
     static let favoriteAdded = Notification.Name("favoriteAdded")
     static let subscribeAdded = Notification.Name("subscribeAdded")
     static let themeChangedNotification = Notification.Name("themeChangedNotification")
-
 }

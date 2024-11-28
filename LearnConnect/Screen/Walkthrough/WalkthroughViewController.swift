@@ -17,7 +17,7 @@ final class WalkthroughViewController: BaseViewController<WalkthroughViewModel> 
         layout.minimumInteritemSpacing = 0
         
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
-        collectionView.backgroundColor = .white
+        collectionView.backgroundColor = .appWhite
         collectionView.isPagingEnabled = true
         collectionView.showsHorizontalScrollIndicator = false
         collectionView.translatesAutoresizingMaskIntoConstraints = false
@@ -34,7 +34,7 @@ final class WalkthroughViewController: BaseViewController<WalkthroughViewModel> 
     private let nextActionButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("İleri", for: .normal)
-        button.setTitleColor(.appWhite, for: .normal)
+        button.setTitleColor(.label, for: .normal)
         button.backgroundColor = .appRed
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 18)
         button.layer.cornerRadius = 10
@@ -46,6 +46,7 @@ final class WalkthroughViewController: BaseViewController<WalkthroughViewModel> 
         configureContents()
         setLocalize()
         addSubViews()
+        self.overrideUserInterfaceStyle = .unspecified
     }
 }
 
@@ -177,5 +178,3 @@ extension WalkthroughViewController {
         collectionView.setContentOffset(CGPoint(x: view.frame.width * CGFloat(sender.currentPage), y: 0), animated: true)
     }
 }
-
-

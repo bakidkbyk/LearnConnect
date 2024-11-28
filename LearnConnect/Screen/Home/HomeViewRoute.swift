@@ -8,19 +8,19 @@
 import UIKit
 
 protocol HomeViewRoute {
-    func pushHome()
+    func placeOnWindowHome()
 }
 
 extension HomeViewRoute where Self: RouterProtocol {
     
-    func pushHome() {
+    func placeOnWindowHome() {
         let router = HomeViewRouter()
         let viewModel = HomeViewModel(router: router)
         let viewController = HomeViewController(viewModel: viewModel)
         let navigationContoller = UINavigationController(rootViewController: viewController)
 
         
-        let transition = PushTransition()
+        let transition = PlaceOnWindowTransition()
         router.viewController = viewController
         router.openTransition = transition
         

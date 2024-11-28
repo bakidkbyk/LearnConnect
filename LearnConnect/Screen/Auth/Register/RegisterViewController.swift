@@ -57,7 +57,8 @@ final class RegisterViewController: BaseViewController<RegisterViewModel> {
         let button = UIButton(type: .system)
         button.setTitle("Kayit Ol", for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 18)
-        button.setTitleColor(.red, for: .normal)
+        button.backgroundColor = .appRed
+        button.setTitleColor(.label, for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
@@ -74,7 +75,7 @@ final class RegisterViewController: BaseViewController<RegisterViewModel> {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 26)
         label.textAlignment = .center
-        label.textColor = .black
+        label.textColor = .label
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -88,14 +89,12 @@ final class RegisterViewController: BaseViewController<RegisterViewModel> {
         return button
     }()
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         addSubViews()
         configureContents()
         setLocalize()
     }
-    
 }
 
 // MARK: - UILayout
@@ -138,7 +137,7 @@ extension RegisterViewController {
         passwordTextField.height(60)
         
         bodyStackView.addArrangedSubview(signUpButton)
-        signUpButton.height(60)
+        signUpButton.size(.init(width: 60, height: 60))
     }
     
     private func addBottomStackView() {
@@ -153,7 +152,6 @@ extension RegisterViewController {
         bottomStackView.bottomToSuperview(usingSafeArea: true)
         bottomStackView.topToBottom(of: scrollView).constant = 20
     }
-    
 }
 
 // MARK: - Configure Contents  And Localize
@@ -161,7 +159,7 @@ extension RegisterViewController {
     
     private func configureContents() {
         
-        view.backgroundColor = .white
+        view.backgroundColor = .appWhite
         
         usernameTextField.leftImage = .icUser
         usernameTextField.autocorrectionType = .no
@@ -180,7 +178,7 @@ extension RegisterViewController {
     }
     
     private func setLocalize() {
-        titleLabel.text = RegisterTexts.title
+        navigationItem.title = RegisterTexts.navigationTitle
         usernameTextField.title = RegisterTexts.usernamePlaceHolder
         emailTextField.title = RegisterTexts.emailPlaceHolder
         passwordTextField.title = RegisterTexts.passwordPlaceHolder

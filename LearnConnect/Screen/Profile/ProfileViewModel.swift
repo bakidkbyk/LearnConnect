@@ -14,13 +14,5 @@ protocol ProfileViewModelEventSource {}
 protocol ProfileViewModelProtocol: ProfileViewModelDataSource, ProfileViewModelEventSource {
 }
 
-final class ProfileViewModel: BaseViewModel<ProfileRouter>, ProfileViewModelProtocol {
-    
+final class ProfileViewModel: BaseViewModel<ProfileRouter>, ProfileViewModelProtocol {}
 
-}
-
-// MARK: - Network
-extension ProfileViewModel {
-    
-
-}

@@ -5,7 +5,7 @@
 //  Created by Melih Avcı on 26.11.2024.
 //
 
-import Foundation
+import UIKit
 
 protocol SubscribeViewDataSource {}
 
@@ -16,5 +16,17 @@ protocol SubscribeViewProtocol: SubscribeViewDataSource, SubscribeViewEventSourc
 final class SubscribeViewModel: BaseViewModel<SubscribeRouter>, SubscribeViewProtocol {
     
     var subscribeItems: [Data] = []
+}
 
+// MARK: - Action
+extension SubscribeViewModel {
+    
+    func didSelectCourse(indexPath: IndexPath) {
+        let item = subscribeItems[indexPath.row]
+        let selectedTitle = item.title ?? "Unknown Course"
+        let imageName = selectedTitle.lowercased()
+        let image = UIImage(named: imageName)
+        
+        router.pushCourseDetailRoute(title: selectedTitle, image: image!)
+    }
 }

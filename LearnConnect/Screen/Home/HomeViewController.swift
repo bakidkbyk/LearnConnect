@@ -20,7 +20,6 @@ final class HomeViewController: BaseViewController<HomeViewModel> {
     private var searchTimer: Timer?
     private var router: CourseDetailRoute?
 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         addSubviews()
@@ -103,10 +102,6 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         cell.configure(title: title)
         return cell
     }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        viewModel.didSelectCourse(indexPath: indexPath)
-    }
 
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
          
@@ -141,5 +136,4 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         showWarningToast(message: "Abone Olundu!")
         tableView.reloadData()
     }
-
 }

@@ -25,4 +25,8 @@ final class CourseDetailViewModel: BaseViewModel<CourseDetailRouter>, CourseDeta
 
         super.init(router: router)
     }
+    
+    func goToComments() {
+       // router.pushCommentListRoute(lessonTitle: self.title)
+    }
 }

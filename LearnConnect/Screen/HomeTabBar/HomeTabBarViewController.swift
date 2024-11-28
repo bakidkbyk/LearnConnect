@@ -53,5 +53,4 @@ class HomeTabBarViewController: UITabBarController {
         subscribeRouter.viewController = subscribeViewController
         return navigationController
     }
-
 }

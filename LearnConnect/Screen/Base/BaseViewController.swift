@@ -9,7 +9,6 @@ import UIKit
 
 class BaseViewController<V: BaseViewModeProtocol>: UIViewController, LoadingProtocol, ActivityIndicatorProtocol  {
     
-    
     var viewModel: V
     
     init(viewModel: V) {
@@ -21,13 +20,11 @@ class BaseViewController<V: BaseViewModeProtocol>: UIViewController, LoadingProt
         super.viewDidLoad()
         subscribeLoading()
         subscribeActivityIndicator()
-        
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
     
     private func subscribeActivityIndicator() {
         viewModel.showActivityIndicatorView = { [weak self] in
