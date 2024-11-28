@@ -2,7 +2,7 @@
 //  RegisterTest.swift
 //  LearnConnectTests
 //
-//  Created by Melih Avcı on 28.11.2024.
+//  Created by Baki Dikbıyık on 28.11.2024.
 //
 
 import XCTest

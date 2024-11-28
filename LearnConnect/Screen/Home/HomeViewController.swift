@@ -41,6 +41,7 @@ final class HomeViewController: BaseViewController<HomeViewModel> {
         viewModel.filteredTitles = viewModel.titles
         searchBar.delegate = self
         navigationItem.titleView = searchBar
+
     }
 
     private func setLocalize() {
@@ -50,6 +51,7 @@ final class HomeViewController: BaseViewController<HomeViewModel> {
     private func setupNavigationBar() {
         let profileButton = UIBarButtonItem(image: UIImage(systemName: "person.circle"), style: .plain, target: self, action: #selector(profileButtonTapped))
         navigationItem.rightBarButtonItem = profileButton
+        profileButton.tintColor = .label
     }
 
     @objc private func profileButtonTapped() {
