@@ -10,7 +10,7 @@ import Foundation
 // MARK: - Register Strings
 struct RegisterTexts {
     
-    static let title = "KAYIT OL"
+    static let navigationTitle = "LEARN CONNECT"
     static let signUpButtonText = "Üye Ol"
     static let bottomLabelText = "Hesabin mi var?"
     static let bottomButtonText = "Giriş Yap"
@@ -24,7 +24,7 @@ struct RegisterTexts {
 // MARK: - Login Strings
 struct LoginTexts {
     
-    static let title = "GİRİŞ YAP"
+    static let navigationTitle = "LEARN CONNECT"
     static let loginButtonText = "Giriş Yap"
     static let bottomLabelText = "Hesabın mı yok?"
     static let bottomButtonText = "Üye Ol"

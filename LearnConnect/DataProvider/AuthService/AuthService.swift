@@ -2,7 +2,7 @@
 //  AuthSer/Users/melihavci/Desktop/LearnConnect/LearnConnectvice.swift
 //  LearnConnect
 //
-//  Created by Melih Avcı on 24.11.2024.
+//  Created by Baki Dikbıyık on 24.11.2024.
 //
 
 import Foundation
@@ -12,7 +12,7 @@ import FirebaseFirestore
 class AuthService {
     
     public static let shared = AuthService()
-    private init() {}
+    public init() {}
     
     public func registerUser(with userRequest: RegiserUserRequest, completion: @escaping (Bool, Error?)->Void) {
         let username = userRequest.username

@@ -2,7 +2,7 @@
 //  SubscribeTableViewCell.swift
 //  LearnConnect
 //
-//  Created by Melih Avcı on 26.11.2024.
+//  Created by Baki Dikbıyık on 26.11.2024.
 //
 
 import UIKit
@@ -12,7 +12,7 @@ public class SubscribeTableViewCell: UITableViewCell {
     private let titleLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 18, weight: .medium)
-        label.textColor = .black
+        label.textColor = .label
         label.numberOfLines = 0
         label.textAlignment = .left
         return label
@@ -20,7 +20,7 @@ public class SubscribeTableViewCell: UITableViewCell {
     
     private let button: UIButton = {
         let button = UIButton(type: .system)
-        button.setImage(UIImage(named: "ic_send"), for: .normal)
+        button.setImage(UIImage(systemName: "play.fill"), for: .normal)
         button.tintColor = .appCinder
         return button
     }()

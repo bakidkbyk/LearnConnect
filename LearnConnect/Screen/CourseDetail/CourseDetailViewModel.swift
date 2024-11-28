@@ -2,7 +2,7 @@
 //  CourseDetailViewModel.swift
 //  LearnConnect
 //
-//  Created by Melih Avcı on 27.11.2024.
+//  Created by Baki Dikbıyık on 27.11.2024.
 //
 
 import UIKit
@@ -24,5 +24,9 @@ final class CourseDetailViewModel: BaseViewModel<CourseDetailRouter>, CourseDeta
         self.image = image
 
         super.init(router: router)
+    }
+    
+    func goToComments() {
+       // router.pushCommentListRoute(lessonTitle: self.title)
     }
 }

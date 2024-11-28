@@ -2,7 +2,7 @@
 //  ActivityIndicatorView.swift
 //  LearnConnect
 //
-//  Created by Melih Avcı on 25.11.2024.
+//  Created by Baki Dikbıyık on 25.11.2024.
 //
 
 import UIKit

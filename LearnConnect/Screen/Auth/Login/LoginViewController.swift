@@ -2,7 +2,7 @@
 //  LoginViewController.swift
 //  LearnConnect
 //
-//  Created by Melih Avcı on 24.11.2024.
+//  Created by Baki Dikbıyık on 24.11.2024.
 //
 
 import UIKit
@@ -34,7 +34,7 @@ final class LoginViewController: BaseViewController<LoginViewModel> {
         let label = UILabel()
         label.font = UIFont.boldSystemFont(ofSize: 26)
         label.textAlignment = .center
-        label.textColor = .black
+        label.textColor = .label
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -54,7 +54,8 @@ final class LoginViewController: BaseViewController<LoginViewModel> {
         let button = UIButton(type: .system)
         button.setTitle("Login", for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 18)
-        button.setTitleColor(.red, for: .normal)
+        button.setTitleColor(.label, for: .normal)
+        button.backgroundColor = .appRed
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
@@ -71,7 +72,7 @@ final class LoginViewController: BaseViewController<LoginViewModel> {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 26)
         label.textAlignment = .center
-        label.textColor = .black
+        label.textColor = .label
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -84,7 +85,6 @@ final class LoginViewController: BaseViewController<LoginViewModel> {
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -153,7 +153,7 @@ extension LoginViewController {
     
     private func configureContents() {
         
-        view.backgroundColor = .white
+        view.backgroundColor = .appWhite
         
         emailTextField.leftImage = .icMail
         emailTextField.autocapitalizationType = .none
@@ -168,13 +168,12 @@ extension LoginViewController {
     }
     
     private func setLocalize() {
-        titleLabel.text = LoginTexts.title
+        navigationItem.title = LoginTexts.navigationTitle
         emailTextField.title = LoginTexts.emailPlaceHolder
         passwordTextField.title = LoginTexts.passwordPlaceHolder
         actionLoginButton.setTitle(LoginTexts.loginButtonText, for: .normal)
         loginLabel.text = LoginTexts.bottomLabelText
         registerButton.setTitle(LoginTexts.bottomButtonText, for: .normal)
-    
     }
 }
 

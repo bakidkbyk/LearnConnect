@@ -2,7 +2,7 @@
 //  WalkthroughViewModel.swift
 //  LearnConnect
 //
-//  Created by Melih Avcı on 25.11.2024.
+//  Created by Baki Dikbıyık on 25.11.2024.
 //
 
 import UIKit
@@ -42,6 +42,6 @@ final class WalkthroughViewModel: BaseViewModel<WalkthroughRouter>, WalkthroughV
 extension WalkthroughViewModel {
     
     func didFinishWalkthrough() {
-        router.pushRegister()
+        router.presentRegister()
     }
 }

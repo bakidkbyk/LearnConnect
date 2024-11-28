@@ -2,9 +2,12 @@
 //  SubscribeRouter.swift
 //  LearnConnect
 //
-//  Created by Melih Avcı on 26.11.2024.
+//  Created by Baki Dikbıyık on 26.11.2024.
 //
 
 import Foundation
 
-final class SubscribeRouter: Router {}
+protocol SubscribeRouterProtocol: CourseDetailRoute { }
+
+final class SubscribeRouter: Router, SubscribeRouterProtocol {}
+

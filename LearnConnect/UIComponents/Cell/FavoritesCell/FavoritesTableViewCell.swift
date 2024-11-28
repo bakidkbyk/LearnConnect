@@ -2,7 +2,7 @@
 //  FavoritesTableViewCell.swift
 //  LearnConnect
 //
-//  Created by Melih Avcı on 26.11.2024.
+//  Created by Baki Dikbıyık on 26.11.2024.
 //
 
 import UIKit
@@ -12,7 +12,7 @@ public class FavoritesTableViewCell: UITableViewCell {
     private let titleLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 18, weight: .medium)
-        label.textColor = .black
+        label.textColor = .label
         label.numberOfLines = 0
         label.textAlignment = .left
         return label

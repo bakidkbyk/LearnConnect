@@ -2,7 +2,7 @@
 //  WalkthroughCell.swift
 //  LearnConnect
 //
-//  Created by Melih Avcı on 25.11.2024.
+//  Created by Baki Dikbıyık on 25.11.2024.
 //
 
 import UIKit
@@ -64,7 +64,7 @@ extension WalkthroughCell {
     
     private func addSubviews() {
         addImageView()
-        addContainerView()
+        addSubview()
         contentView.backgroundColor = .appWhite
     }
     
@@ -75,7 +75,7 @@ extension WalkthroughCell {
         imageView.aspectRatio(1)
     }
     
-    private func addContainerView() {
+    private func addSubview() {
         contentView.addSubview(containerView)
         containerView.topToBottom(of: imageView)
         containerView.edgesToSuperview(excluding: .top)

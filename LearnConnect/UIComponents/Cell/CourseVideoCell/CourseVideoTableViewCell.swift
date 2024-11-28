@@ -2,7 +2,7 @@
 //  CourseVideoTableViewCell.swift
 //  LearnConnect
 //
-//  Created by Melih Avcı on 27.11.2024.
+//  Created by Baki Dikbıyık on 27.11.2024.
 //
 
 import UIKit
@@ -25,7 +25,7 @@ public class CourseVideoTableViewCell: UITableViewCell {
     private let videoNameLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 18, weight: .medium)
-        label.textColor = .black
+        label.textColor = .label
         label.numberOfLines = 0
         label.textAlignment = .left
         return label
@@ -67,7 +67,6 @@ extension CourseVideoTableViewCell {
 
         button.size(CGSize(width: 10, height: 10))
     }
-    
 }
 
 // MARK: - Set ViewModel

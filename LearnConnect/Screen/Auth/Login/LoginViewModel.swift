@@ -2,7 +2,7 @@
 //  LoginViewModel.swift
 //  LearnConnect
 //
-//  Created by Melih Avcı on 24.11.2024.
+//  Created by Baki Dikbıyık on 24.11.2024.
 //
 
 import UIKit
@@ -40,6 +40,8 @@ extension LoginViewModel {
         AuthService.shared.signIn(with: loginRequest) { [weak self] error, wasLogin in
             guard let self = self else { return }
             self.hideLoading?()
+            self.showWarningToast?("Başarılı")
+
             
             if let error = error {
                 self.showWarningToast?(error.localizedDescription)
@@ -47,6 +49,7 @@ extension LoginViewModel {
             }
             
             if wasLogin {
+                UserDefaults.standard.set(true, forKey: "isUserLoggedIn")
                 loginSuccess()
             } else {
                 self.showWarningToast?("Bilinmeyen bir hata oluştu. Lütfen tekrar deneyin.")

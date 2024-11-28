@@ -20,7 +20,6 @@ final class HomeViewController: BaseViewController<HomeViewModel> {
     private var searchTimer: Timer?
     private var router: CourseDetailRoute?
 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         addSubviews()
@@ -42,6 +41,7 @@ final class HomeViewController: BaseViewController<HomeViewModel> {
         viewModel.filteredTitles = viewModel.titles
         searchBar.delegate = self
         navigationItem.titleView = searchBar
+
     }
 
     private func setLocalize() {
@@ -51,6 +51,7 @@ final class HomeViewController: BaseViewController<HomeViewModel> {
     private func setupNavigationBar() {
         let profileButton = UIBarButtonItem(image: UIImage(systemName: "person.circle"), style: .plain, target: self, action: #selector(profileButtonTapped))
         navigationItem.rightBarButtonItem = profileButton
+        profileButton.tintColor = .label
     }
 
     @objc private func profileButtonTapped() {
@@ -103,10 +104,6 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         cell.configure(title: title)
         return cell
     }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        viewModel.didSelectCourse(indexPath: indexPath)
-    }
 
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
          
@@ -141,5 +138,4 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         showWarningToast(message: "Abone Olundu!")
         tableView.reloadData()
     }
-
 }

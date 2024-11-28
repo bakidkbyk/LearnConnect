@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol AppRouterRoutes: WalkthroughRoute {
+protocol AppRouterRoutes: WalkthroughRoute, HomeTabBarRoute, LoginRoute {
     func startApp()
 }
 
@@ -16,9 +16,12 @@ final class AppRouter: Router, AppRouterRoutes {
     static let shared = AppRouter()
 
     func startApp() {
-        placeOnWindowWalkthrough()
+        let isUserLoggedIn = UserDefaults.standard.bool(forKey: "isUserLoggedIn")
+
+        if isUserLoggedIn {
+            placeOnWindowTabBar()
+        } else {
+            placeOnWindowWalkthrough()
+        }
     }
-    
 }
-
-
